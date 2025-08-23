@@ -2,6 +2,13 @@
 title: "Jacob K. McPherson"
 ---
 
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+![](profile.svg){.img-fluid .rounded-circle style="max-width: 250px; width: 100%;"}
+:::
+
+::: {.g-col-12 .g-col-md-8}
 # Welcome to My Personal Website
 
 Welcome to my personal website! I'm Jacob K. McPherson, and this is where I share my research, thoughts, and professional activities.
@@ -21,3 +28,6 @@ Check out my latest [blog posts](blog/index.qmd) for insights and updates on my 
 ## Contact
 
 Feel free to reach out if you'd like to connect or collaborate!
+:::
+
+:::

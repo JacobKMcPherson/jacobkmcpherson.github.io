@@ -20,6 +20,16 @@ website:
         text: Podcasts
       - href: gallery.qmd
         text: Gallery
+    right:
+      - icon: twitter
+        href: https://twitter.com
+        aria-label: Twitter
+      - icon: linkedin
+        href: https://linkedin.com
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com
+        aria-label: GitHub
 
 format:
   html:
