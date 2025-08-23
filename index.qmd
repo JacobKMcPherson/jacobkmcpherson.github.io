@@ -1,0 +1,13 @@
+---
+title: "Welcome"
+---
+
+# Hello, I'm Jacob K. McPherson
+
+Welcome to my personal website. This site showcases my work, projects, and interests.
+
+## About This Site
+
+This website is built with [Quarto](https://quarto.org/), a powerful publishing system that makes it easy to create and share technical content.
+
+Feel free to explore and learn more about me in the [About](about.qmd) section.
