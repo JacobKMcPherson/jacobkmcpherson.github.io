@@ -1,0 +1,28 @@
+name: Validate Quarto Setup
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '_quarto.yml'
+      - '*.qmd'
+      - '.github/workflows/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: release
+
+      - name: Validate Quarto configuration
+        run: quarto check
+
+      - name: Test Quarto render (dry run)
+        run: quarto render --to html
