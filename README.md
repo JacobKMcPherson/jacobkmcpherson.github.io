@@ -8,7 +8,7 @@ This website is automatically built and deployed using GitHub Actions whenever c
 
 1. Sets up Quarto in the GitHub Actions environment
 2. Renders the Quarto project to HTML
-3. Deploys the generated content to GitHub Pages
+3. Deploys the generated content to GitHub Pages - check it out: [jacobkmcpherson.github.io/](jacobkmcpherson.github.io/)
 
 ## Local Development
 
