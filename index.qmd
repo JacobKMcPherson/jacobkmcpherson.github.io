@@ -1,0 +1,23 @@
+---
+title: "Jacob K. McPherson"
+---
+
+# Welcome to My Personal Website
+
+Welcome to my personal website! I'm Jacob K. McPherson, and this is where I share my research, thoughts, and professional activities.
+
+## Latest Updates
+
+Check out my latest [blog posts](blog/index.qmd) for insights and updates on my work.
+
+## Quick Links
+
+- [About Me](about.qmd) - Learn more about my background and interests
+- [Research](research.qmd) - Explore my research projects and publications
+- [Talks](talks.qmd) - See my presentations and conference talks
+- [Podcasts](podcasts.qmd) - Listen to my podcast appearances
+- [Gallery](gallery.qmd) - View photos and media from my work
+
+## Contact
+
+Feel free to reach out if you'd like to connect or collaborate!

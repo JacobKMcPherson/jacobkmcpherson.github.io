@@ -1,0 +1,31 @@
+---
+title: "Research"
+---
+
+# Research
+
+## Current Projects
+
+[Describe your current research projects here]
+
+## Publications
+
+### Journal Articles
+
+[List your journal publications here]
+
+### Conference Papers
+
+[List your conference papers here]
+
+### Preprints
+
+[List your preprints and working papers here]
+
+## Research Interests
+
+[Describe your main research areas and interests]
+
+## Collaborations
+
+[Information about research collaborations and partnerships]
