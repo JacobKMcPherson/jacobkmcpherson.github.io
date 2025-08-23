@@ -35,109 +35,39 @@
     "text": "Feel free to reach out if you’d like to connect or collaborate!"
   },
   {
-    "objectID": "gallery.html",
-    "href": "gallery.html",
-    "title": "Gallery",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "[Add photos from your research work, conferences, and field work]\n\n\n\n[Photos from conferences and professional events]\n\n\n\n[Personal photos you’d like to share]\n\n\n\n[Screenshots or photos of media coverage of your work]\n\nNote: Add your images to the website by placing them in an images/ folder and linking to them using markdown syntax like ![Alt text](images/photo.jpg)"
+    "text": "Welcome to my personal website! I’m Jacob K. McPherson, and this is where I share my work, thoughts, and interests."
   },
   {
-    "objectID": "gallery.html#research-photos",
-    "href": "gallery.html#research-photos",
-    "title": "Gallery",
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
     "section": "",
-    "text": "[Add photos from your research work, conferences, and field work]"
+    "text": "Welcome to my personal website! I’m Jacob K. McPherson, and this is where I share my work, thoughts, and interests."
   },
   {
-    "objectID": "gallery.html#conference-photos",
-    "href": "gallery.html#conference-photos",
-    "title": "Gallery",
-    "section": "",
-    "text": "[Photos from conferences and professional events]"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n[Your educational background here]"
   },
   {
-    "objectID": "gallery.html#personal-photos",
-    "href": "gallery.html#personal-photos",
-    "title": "Gallery",
-    "section": "",
-    "text": "[Personal photos you’d like to share]"
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n[Your professional experience here]"
   },
   {
-    "objectID": "gallery.html#media-coverage",
-    "href": "gallery.html#media-coverage",
-    "title": "Gallery",
-    "section": "",
-    "text": "[Screenshots or photos of media coverage of your work]\n\nNote: Add your images to the website by placing them in an images/ folder and linking to them using markdown syntax like ![Alt text](images/photo.jpg)"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "[Describe your current research projects here]\n\n\n\n\n\n[List your journal publications here]\n\n\n\n[List your conference papers here]\n\n\n\n[List your preprints and working papers here]\n\n\n\n\n[Describe your main research areas and interests]\n\n\n\n[Information about research collaborations and partnerships]"
-  },
-  {
-    "objectID": "research.html#current-projects",
-    "href": "research.html#current-projects",
-    "title": "Research",
-    "section": "",
-    "text": "[Describe your current research projects here]"
-  },
-  {
-    "objectID": "research.html#publications",
-    "href": "research.html#publications",
-    "title": "Research",
-    "section": "",
-    "text": "[List your journal publications here]\n\n\n\n[List your conference papers here]\n\n\n\n[List your preprints and working papers here]"
-  },
-  {
-    "objectID": "research.html#research-interests",
-    "href": "research.html#research-interests",
-    "title": "Research",
-    "section": "",
-    "text": "[Describe your main research areas and interests]"
-  },
-  {
-    "objectID": "research.html#collaborations",
-    "href": "research.html#collaborations",
-    "title": "Research",
-    "section": "",
-    "text": "[Information about research collaborations and partnerships]"
-  },
-  {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks",
-    "section": "",
-    "text": "[List your upcoming presentations and talks here]\n\n\n\n\n\n[List your conference presentations here]\n\n\n\n[List your invited talks and seminars here]\n\n\n\n[List your workshop presentations here]\n\n\n\n\n[Describe the topics you speak about and are available to present on]\n\n\n\nIf you’re interested in having me speak at your event, please contact me."
-  },
-  {
-    "objectID": "talks.html#upcoming-talks",
-    "href": "talks.html#upcoming-talks",
-    "title": "Talks",
-    "section": "",
-    "text": "[List your upcoming presentations and talks here]"
-  },
-  {
-    "objectID": "talks.html#recent-presentations",
-    "href": "talks.html#recent-presentations",
-    "title": "Talks",
-    "section": "",
-    "text": "[List your conference presentations here]\n\n\n\n[List your invited talks and seminars here]\n\n\n\n[List your workshop presentations here]"
-  },
-  {
-    "objectID": "talks.html#speaking-topics",
-    "href": "talks.html#speaking-topics",
-    "title": "Talks",
-    "section": "",
-    "text": "[Describe the topics you speak about and are available to present on]"
-  },
-  {
-    "objectID": "talks.html#speaking-requests",
-    "href": "talks.html#speaking-requests",
-    "title": "Talks",
-    "section": "",
-    "text": "If you’re interested in having me speak at your event, please contact me."
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests\n[Your research interests and hobbies here]"
   },
   {
     "objectID": "podcasts.html",
@@ -175,39 +105,158 @@
     "text": "[List podcasts you enjoy listening to and recommend]"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
     "section": "",
-    "text": "Welcome to my personal website! I’m Jacob K. McPherson, and this is where I share my work, thoughts, and interests."
+    "text": "[List your upcoming presentations and talks here]\n\n\n\n\n\n[List your conference presentations here]\n\n\n\n[List your invited talks and seminars here]\n\n\n\n[List your workshop presentations here]\n\n\n\n\n[Describe the topics you speak about and are available to present on]\n\n\n\nIf you’re interested in having me speak at your event, please contact me."
   },
   {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
+    "objectID": "talks.html#upcoming-talks",
+    "href": "talks.html#upcoming-talks",
+    "title": "Talks",
     "section": "",
-    "text": "Welcome to my personal website! I’m Jacob K. McPherson, and this is where I share my work, thoughts, and interests."
+    "text": "[List your upcoming presentations and talks here]"
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n[Your educational background here]"
+    "objectID": "talks.html#recent-presentations",
+    "href": "talks.html#recent-presentations",
+    "title": "Talks",
+    "section": "",
+    "text": "[List your conference presentations here]\n\n\n\n[List your invited talks and seminars here]\n\n\n\n[List your workshop presentations here]"
   },
   {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About",
-    "section": "Experience",
-    "text": "Experience\n[Your professional experience here]"
+    "objectID": "talks.html#speaking-topics",
+    "href": "talks.html#speaking-topics",
+    "title": "Talks",
+    "section": "",
+    "text": "[Describe the topics you speak about and are available to present on]"
   },
   {
-    "objectID": "about.html#interests",
-    "href": "about.html#interests",
-    "title": "About",
-    "section": "Interests",
-    "text": "Interests\n[Your research interests and hobbies here]"
+    "objectID": "talks.html#speaking-requests",
+    "href": "talks.html#speaking-requests",
+    "title": "Talks",
+    "section": "",
+    "text": "If you’re interested in having me speak at your event, please contact me."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "[Describe your current research projects here]\n\n\n\n\n\n[List your journal publications here]\n\n\n\n[List your conference papers here]\n\n\n\n[List your preprints and working papers here]\n\n\n\n\n[Describe your main research areas and interests]\n\n\n\n[Information about research collaborations and partnerships]"
+  },
+  {
+    "objectID": "research.html#current-projects",
+    "href": "research.html#current-projects",
+    "title": "Research",
+    "section": "",
+    "text": "[Describe your current research projects here]"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "",
+    "text": "[List your journal publications here]\n\n\n\n[List your conference papers here]\n\n\n\n[List your preprints and working papers here]"
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "[Describe your main research areas and interests]"
+  },
+  {
+    "objectID": "research.html#collaborations",
+    "href": "research.html#collaborations",
+    "title": "Research",
+    "section": "",
+    "text": "[Information about research collaborations and partnerships]"
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "[Add photos from your research work, conferences, and field work]\n\n\n\n[Photos from conferences and professional events]\n\n\n\n[Personal photos you’d like to share]\n\n\n\n[Screenshots or photos of media coverage of your work]\n\nNote: Add your images to the website by placing them in an images/ folder and linking to them using markdown syntax like ![Alt text](images/photo.jpg)"
+  },
+  {
+    "objectID": "gallery.html#research-photos",
+    "href": "gallery.html#research-photos",
+    "title": "Gallery",
+    "section": "",
+    "text": "[Add photos from your research work, conferences, and field work]"
+  },
+  {
+    "objectID": "gallery.html#conference-photos",
+    "href": "gallery.html#conference-photos",
+    "title": "Gallery",
+    "section": "",
+    "text": "[Photos from conferences and professional events]"
+  },
+  {
+    "objectID": "gallery.html#personal-photos",
+    "href": "gallery.html#personal-photos",
+    "title": "Gallery",
+    "section": "",
+    "text": "[Personal photos you’d like to share]"
+  },
+  {
+    "objectID": "gallery.html#media-coverage",
+    "href": "gallery.html#media-coverage",
+    "title": "Gallery",
+    "section": "",
+    "text": "[Screenshots or photos of media coverage of your work]\n\nNote: Add your images to the website by placing them in an images/ folder and linking to them using markdown syntax like ![Alt text](images/photo.jpg)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html",
+    "href": "DEPLOYMENT.html",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "This document explains the comprehensive GitHub Actions setup for automatic deployment of the Quarto website to GitHub Pages.\n\n\nTwo GitHub Actions workflows have been implemented:\n\n\nTriggers: - Push to main or master branch - Pull requests to main or master branch (for testing) - Manual trigger via workflow dispatch\nJobs:\n\n\n\nOS: Ubuntu Latest\nSteps:\n\nCheckout repository\nSetup Quarto (latest release)\nConfigure GitHub Pages\nRender Quarto project to HTML\nUpload Pages artifact from docs/ directory\n\n\n\n\n\n\nEnvironment: github-pages\nConditions: Only runs on main/master branch pushes\nDependencies: Requires build job to complete successfully\nAction: Deploy to GitHub Pages using the built artifact\n\nPermissions: - contents: read - Read repository contents - pages: write - Write to GitHub Pages - id-token: write - Write identity tokens for deployment\nConcurrency: - Group: “pages” - Cancel in progress: false (allows deployments to complete)\n\n\n\n\nTriggers: - Manual trigger via workflow dispatch - Pull requests that modify: - _quarto.yml configuration - *.qmd content files - GitHub Actions workflows\nPurpose: - Validates Quarto configuration - Tests rendering process without deployment - Provides early feedback on content changes\n\n\n\n\n\n\n\nProject Type: Website\nOutput Directory: docs/ (required for GitHub Pages)\nFormat: HTML with Cosmo theme\n\n\n\n\nEnhanced to exclude Quarto-specific files: - /.quarto/ - Quarto cache directory - *_cache/ - Rendering cache directories - .quarto - Additional Quarto files - _site/ - Alternative output directory - *.tmp - Temporary files - .DS_Store, Thumbs.db - OS-specific files\n\n\n\n\n\nDeveloper pushes changes to main/master branch\nBuild job triggers and:\n\nSets up fresh Ubuntu environment\nInstalls Quarto\nRenders all .qmd files to HTML in docs/\nUploads the docs/ directory as Pages artifact\n\nDeploy job triggers (only on main/master) and:\n\nDownloads the artifact\nDeploys to GitHub Pages\nMakes site live at https://jacobkmcpherson.github.io\n\n\n\n\n\n\nAutomated Deployment: No manual steps required\nVersion Control: All source files tracked in Git\nBuild Validation: PRs are tested before merge\nConsistent Environment: Same Quarto version used for all builds\nRollback Capability: Can revert to any previous commit\nConcurrent Safety: Only one deployment at a time\n\n\n\n\n\nBuild failures: Check the Actions tab for detailed logs\nDeployment failures: Verify GitHub Pages is enabled in repository settings\nContent issues: Use the validation workflow to test changes\n\n\n\n\nFor this to work, the repository needs: 1. GitHub Pages enabled with source set to “GitHub Actions” 2. Actions permissions enabled 3. Branch protection (optional but recommended) for main/master branch"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#implementation-overview",
+    "href": "DEPLOYMENT.html#implementation-overview",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "Two GitHub Actions workflows have been implemented:\n\n\nTriggers: - Push to main or master branch - Pull requests to main or master branch (for testing) - Manual trigger via workflow dispatch\nJobs:\n\n\n\nOS: Ubuntu Latest\nSteps:\n\nCheckout repository\nSetup Quarto (latest release)\nConfigure GitHub Pages\nRender Quarto project to HTML\nUpload Pages artifact from docs/ directory\n\n\n\n\n\n\nEnvironment: github-pages\nConditions: Only runs on main/master branch pushes\nDependencies: Requires build job to complete successfully\nAction: Deploy to GitHub Pages using the built artifact\n\nPermissions: - contents: read - Read repository contents - pages: write - Write to GitHub Pages - id-token: write - Write identity tokens for deployment\nConcurrency: - Group: “pages” - Cancel in progress: false (allows deployments to complete)\n\n\n\n\nTriggers: - Manual trigger via workflow dispatch - Pull requests that modify: - _quarto.yml configuration - *.qmd content files - GitHub Actions workflows\nPurpose: - Validates Quarto configuration - Tests rendering process without deployment - Provides early feedback on content changes"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#configuration-details",
+    "href": "DEPLOYMENT.html#configuration-details",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "Project Type: Website\nOutput Directory: docs/ (required for GitHub Pages)\nFormat: HTML with Cosmo theme\n\n\n\n\nEnhanced to exclude Quarto-specific files: - /.quarto/ - Quarto cache directory - *_cache/ - Rendering cache directories - .quarto - Additional Quarto files - _site/ - Alternative output directory - *.tmp - Temporary files - .DS_Store, Thumbs.db - OS-specific files"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#deployment-process",
+    "href": "DEPLOYMENT.html#deployment-process",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "Developer pushes changes to main/master branch\nBuild job triggers and:\n\nSets up fresh Ubuntu environment\nInstalls Quarto\nRenders all .qmd files to HTML in docs/\nUploads the docs/ directory as Pages artifact\n\nDeploy job triggers (only on main/master) and:\n\nDownloads the artifact\nDeploys to GitHub Pages\nMakes site live at https://jacobkmcpherson.github.io"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#benefits",
+    "href": "DEPLOYMENT.html#benefits",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "Automated Deployment: No manual steps required\nVersion Control: All source files tracked in Git\nBuild Validation: PRs are tested before merge\nConsistent Environment: Same Quarto version used for all builds\nRollback Capability: Can revert to any previous commit\nConcurrent Safety: Only one deployment at a time"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#troubleshooting",
+    "href": "DEPLOYMENT.html#troubleshooting",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "Build failures: Check the Actions tab for detailed logs\nDeployment failures: Verify GitHub Pages is enabled in repository settings\nContent issues: Use the validation workflow to test changes"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#repository-settings-required",
+    "href": "DEPLOYMENT.html#repository-settings-required",
+    "title": "GitHub Actions Deployment Setup",
+    "section": "",
+    "text": "For this to work, the repository needs: 1. GitHub Pages enabled with source set to “GitHub Actions” 2. Actions permissions enabled 3. Branch protection (optional but recommended) for main/master branch"
   },
   {
     "objectID": "blog/posts/welcome.html",

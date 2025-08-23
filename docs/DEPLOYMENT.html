@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jacob K. McPherson - Gallery</title>
+<title>Jacob K. McPherson</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Podcasts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./gallery.html" aria-current="page"> 
+    <a class="nav-link" href="./gallery.html"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
 </ul>
@@ -149,12 +149,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#gallery" id="toc-gallery" class="nav-link active" data-scroll-target="#gallery">Gallery</a>
+  <li><a href="#github-actions-deployment-setup" id="toc-github-actions-deployment-setup" class="nav-link active" data-scroll-target="#github-actions-deployment-setup">GitHub Actions Deployment Setup</a>
   <ul class="collapse">
-  <li><a href="#research-photos" id="toc-research-photos" class="nav-link" data-scroll-target="#research-photos">Research Photos</a></li>
-  <li><a href="#conference-photos" id="toc-conference-photos" class="nav-link" data-scroll-target="#conference-photos">Conference Photos</a></li>
-  <li><a href="#personal-photos" id="toc-personal-photos" class="nav-link" data-scroll-target="#personal-photos">Personal Photos</a></li>
-  <li><a href="#media-coverage" id="toc-media-coverage" class="nav-link" data-scroll-target="#media-coverage">Media Coverage</a></li>
+  <li><a href="#implementation-overview" id="toc-implementation-overview" class="nav-link" data-scroll-target="#implementation-overview">Implementation Overview</a>
+  <ul class="collapse">
+  <li><a href="#quarto-publish.yml---main-deployment-workflow" id="toc-quarto-publish.yml---main-deployment-workflow" class="nav-link" data-scroll-target="#quarto-publish.yml---main-deployment-workflow">1. <code>quarto-publish.yml</code> - Main Deployment Workflow</a></li>
+  <li><a href="#validate-quarto.yml---validation-workflow" id="toc-validate-quarto.yml---validation-workflow" class="nav-link" data-scroll-target="#validate-quarto.yml---validation-workflow">2. <code>validate-quarto.yml</code> - Validation Workflow</a></li>
+  </ul></li>
+  <li><a href="#configuration-details" id="toc-configuration-details" class="nav-link" data-scroll-target="#configuration-details">Configuration Details</a>
+  <ul class="collapse">
+  <li><a href="#quarto-configuration-_quarto.yml" id="toc-quarto-configuration-_quarto.yml" class="nav-link" data-scroll-target="#quarto-configuration-_quarto.yml">Quarto Configuration (<code>_quarto.yml</code>)</a></li>
+  <li><a href="#git-ignore-.gitignore" id="toc-git-ignore-.gitignore" class="nav-link" data-scroll-target="#git-ignore-.gitignore">Git Ignore (<code>.gitignore</code>)</a></li>
+  </ul></li>
+  <li><a href="#deployment-process" id="toc-deployment-process" class="nav-link" data-scroll-target="#deployment-process">Deployment Process</a></li>
+  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits">Benefits</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#repository-settings-required" id="toc-repository-settings-required" class="nav-link" data-scroll-target="#repository-settings-required">Repository Settings Required</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -162,44 +172,107 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Gallery</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="gallery" class="level1">
-<h1>Gallery</h1>
-<section id="research-photos" class="level2">
-<h2 class="anchored" data-anchor-id="research-photos">Research Photos</h2>
-<p>[Add photos from your research work, conferences, and field work]</p>
+<section id="github-actions-deployment-setup" class="level1">
+<h1>GitHub Actions Deployment Setup</h1>
+<p>This document explains the comprehensive GitHub Actions setup for automatic deployment of the Quarto website to GitHub Pages.</p>
+<section id="implementation-overview" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-overview">Implementation Overview</h2>
+<p>Two GitHub Actions workflows have been implemented:</p>
+<section id="quarto-publish.yml---main-deployment-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-publish.yml---main-deployment-workflow">1. <code>quarto-publish.yml</code> - Main Deployment Workflow</h3>
+<p><strong>Triggers:</strong> - Push to <code>main</code> or <code>master</code> branch - Pull requests to <code>main</code> or <code>master</code> branch (for testing) - Manual trigger via workflow dispatch</p>
+<p><strong>Jobs:</strong></p>
+<section id="build-job" class="level4">
+<h4 class="anchored" data-anchor-id="build-job">Build Job</h4>
+<ul>
+<li><strong>OS:</strong> Ubuntu Latest</li>
+<li><strong>Steps:</strong>
+<ol type="1">
+<li>Checkout repository</li>
+<li>Setup Quarto (latest release)</li>
+<li>Configure GitHub Pages</li>
+<li>Render Quarto project to HTML</li>
+<li>Upload Pages artifact from <code>docs/</code> directory</li>
+</ol></li>
+</ul>
 </section>
-<section id="conference-photos" class="level2">
-<h2 class="anchored" data-anchor-id="conference-photos">Conference Photos</h2>
-<p>[Photos from conferences and professional events]</p>
+<section id="deploy-job" class="level4">
+<h4 class="anchored" data-anchor-id="deploy-job">Deploy Job</h4>
+<ul>
+<li><strong>Environment:</strong> <code>github-pages</code></li>
+<li><strong>Conditions:</strong> Only runs on main/master branch pushes</li>
+<li><strong>Dependencies:</strong> Requires build job to complete successfully</li>
+<li><strong>Action:</strong> Deploy to GitHub Pages using the built artifact</li>
+</ul>
+<p><strong>Permissions:</strong> - <code>contents: read</code> - Read repository contents - <code>pages: write</code> - Write to GitHub Pages - <code>id-token: write</code> - Write identity tokens for deployment</p>
+<p><strong>Concurrency:</strong> - Group: “pages” - Cancel in progress: false (allows deployments to complete)</p>
 </section>
-<section id="personal-photos" class="level2">
-<h2 class="anchored" data-anchor-id="personal-photos">Personal Photos</h2>
-<p>[Personal photos you’d like to share]</p>
 </section>
-<section id="media-coverage" class="level2">
-<h2 class="anchored" data-anchor-id="media-coverage">Media Coverage</h2>
-<p>[Screenshots or photos of media coverage of your work]</p>
-<hr>
-<p><em>Note: Add your images to the website by placing them in an <code>images/</code> folder and linking to them using markdown syntax like <code>![Alt text](images/photo.jpg)</code></em></p>
+<section id="validate-quarto.yml---validation-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="validate-quarto.yml---validation-workflow">2. <code>validate-quarto.yml</code> - Validation Workflow</h3>
+<p><strong>Triggers:</strong> - Manual trigger via workflow dispatch - Pull requests that modify: - <code>_quarto.yml</code> configuration - <code>*.qmd</code> content files - GitHub Actions workflows</p>
+<p><strong>Purpose:</strong> - Validates Quarto configuration - Tests rendering process without deployment - Provides early feedback on content changes</p>
+</section>
+</section>
+<section id="configuration-details" class="level2">
+<h2 class="anchored" data-anchor-id="configuration-details">Configuration Details</h2>
+<section id="quarto-configuration-_quarto.yml" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-configuration-_quarto.yml">Quarto Configuration (<code>_quarto.yml</code>)</h3>
+<ul>
+<li><strong>Project Type:</strong> Website</li>
+<li><strong>Output Directory:</strong> <code>docs/</code> (required for GitHub Pages)</li>
+<li><strong>Format:</strong> HTML with Cosmo theme</li>
+</ul>
+</section>
+<section id="git-ignore-.gitignore" class="level3">
+<h3 class="anchored" data-anchor-id="git-ignore-.gitignore">Git Ignore (<code>.gitignore</code>)</h3>
+<p>Enhanced to exclude Quarto-specific files: - <code>/.quarto/</code> - Quarto cache directory - <code>*_cache/</code> - Rendering cache directories - <code>.quarto</code> - Additional Quarto files - <code>_site/</code> - Alternative output directory - <code>*.tmp</code> - Temporary files - <code>.DS_Store</code>, <code>Thumbs.db</code> - OS-specific files</p>
+</section>
+</section>
+<section id="deployment-process" class="level2">
+<h2 class="anchored" data-anchor-id="deployment-process">Deployment Process</h2>
+<ol type="1">
+<li><strong>Developer pushes changes</strong> to main/master branch</li>
+<li><strong>Build job triggers</strong> and:
+<ul>
+<li>Sets up fresh Ubuntu environment</li>
+<li>Installs Quarto</li>
+<li>Renders all <code>.qmd</code> files to HTML in <code>docs/</code></li>
+<li>Uploads the <code>docs/</code> directory as Pages artifact</li>
+</ul></li>
+<li><strong>Deploy job triggers</strong> (only on main/master) and:
+<ul>
+<li>Downloads the artifact</li>
+<li>Deploys to GitHub Pages</li>
+<li>Makes site live at <code>https://jacobkmcpherson.github.io</code></li>
+</ul></li>
+</ol>
+</section>
+<section id="benefits" class="level2">
+<h2 class="anchored" data-anchor-id="benefits">Benefits</h2>
+<ol type="1">
+<li><strong>Automated Deployment:</strong> No manual steps required</li>
+<li><strong>Version Control:</strong> All source files tracked in Git</li>
+<li><strong>Build Validation:</strong> PRs are tested before merge</li>
+<li><strong>Consistent Environment:</strong> Same Quarto version used for all builds</li>
+<li><strong>Rollback Capability:</strong> Can revert to any previous commit</li>
+<li><strong>Concurrent Safety:</strong> Only one deployment at a time</li>
+</ol>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Build failures:</strong> Check the Actions tab for detailed logs</li>
+<li><strong>Deployment failures:</strong> Verify GitHub Pages is enabled in repository settings</li>
+<li><strong>Content issues:</strong> Use the validation workflow to test changes</li>
+</ul>
+</section>
+<section id="repository-settings-required" class="level2">
+<h2 class="anchored" data-anchor-id="repository-settings-required">Repository Settings Required</h2>
+<p>For this to work, the repository needs: 1. <strong>GitHub Pages enabled</strong> with source set to “GitHub Actions” 2. <strong>Actions permissions</strong> enabled 3. <strong>Branch protection</strong> (optional but recommended) for main/master branch</p>
 
 
 </section>
