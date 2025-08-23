@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Jacob K. McPherson"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: blog/index.qmd
+        text: Blog
+      - href: research.qmd
+        text: Research
+      - href: talks.qmd
+        text: Talks
+      - href: podcasts.qmd
+        text: Podcasts
+      - href: gallery.qmd
+        text: Gallery
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

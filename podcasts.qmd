@@ -1,0 +1,30 @@
+---
+title: "Podcasts"
+---
+
+# Podcasts
+
+## My Podcast Appearances
+
+[List podcast episodes where you've been a guest]
+
+### Recent Episodes
+
+[Embed or link to recent podcast appearances here]
+
+## Topics I Discuss
+
+[List the topics you typically discuss on podcasts]
+
+- Research insights
+- Industry trends
+- Professional experiences
+- [Add your specific topics]
+
+## Podcast Invitations
+
+I'm always interested in appearing on podcasts to discuss my work and research. If you have a podcast and would like to have me as a guest, please [reach out](mailto:your-email@example.com)!
+
+## My Favorite Podcasts
+
+[List podcasts you enjoy listening to and recommend]
