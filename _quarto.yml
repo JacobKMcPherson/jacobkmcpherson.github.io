@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Jacob K. McPherson"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
