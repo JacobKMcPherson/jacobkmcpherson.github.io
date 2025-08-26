@@ -22,13 +22,13 @@ website:
         text: Gallery
     right:
       - icon: twitter
-        href: https://twitter.com
+        href: https://x.com/JacobKMcPherson
         aria-label: Twitter
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
       - icon: github
-        href: https://github.com
+        href: https://github.com/JacobKMcPherson
         aria-label: GitHub
 
 format:

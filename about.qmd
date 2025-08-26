@@ -6,13 +6,13 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://x.com/JacobKMcPherson
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/jacobkmcpherson/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/JacobKMcPherson
 ---
 
 ## About Me
