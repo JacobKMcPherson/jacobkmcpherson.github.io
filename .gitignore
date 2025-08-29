@@ -5,3 +5,4 @@ _site/
 *.tmp
 .DS_Store
 Thumbs.db
+.Rproj.user
