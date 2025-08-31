@@ -30,6 +30,30 @@ website:
       - icon: github
         href: https://github.com/JacobKMcPherson
         aria-label: GitHub
+        - icon: facebook
+        href: https://facebook.com/jacobkmcpherson/
+        aria-label: Facebook
+      - icon: instagram
+        href: https://instagram.com/jkmcpherson_25
+        aria-label: Instagram
+      - icon: youtube
+        href: https://youtube.com/@jacobkmcpherson
+        aria-label: YouTube
+      #- icon: medium
+      #  href: https://medium.com/@yourprofile
+      #  aria-label: Medium
+      - icon: book
+        href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: globe
+        href: https://jacobkmcpherson.com
+        aria-label: Website
+      - icon: calendar
+        href: https://jacobkmcpherson.com/calendar
+        aria-label: Calendar
+      - icon: envelope
+        href: mailto:jacobmcpherson@utexas.edu
+        aria-label: Email
 
 format:
   html:
