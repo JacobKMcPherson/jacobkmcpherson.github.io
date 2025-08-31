@@ -6,7 +6,7 @@ title: "Podcasts"
 
 ## My Podcast Appearances
 
-[List podcast episodes where you've been a guest]
+[List podcast episodes where you've been a guest] 
 
 ### Recent Episodes
 
@@ -27,4 +27,11 @@ I'm always interested in appearing on podcasts to discuss my work and research. 
 
 ## My Favorite Podcasts
 
-[List podcasts you enjoy listening to and recommend]
+<iframe 
+    src="https://open.spotify.com/embed/show/2ZFDmgDS2Z6xccP51s1zFQ" 
+    width="100%" 
+    height="232" 
+    frameborder="0" 
+    allowtransparency="true" 
+    allow="encrypted-media">
+</iframe>
