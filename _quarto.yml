@@ -21,27 +21,6 @@ website:
       - href: gallery.qmd
         text: Gallery
     right:
-      - icon: twitter
-        href: https://x.com/JacobKMcPherson
-        aria-label: Twitter
-      - icon: linkedin
-        href: https://linkedin.com/in/jacobkmcpherson/
-        aria-label: LinkedIn
-      - icon: github
-        href: https://github.com/JacobKMcPherson
-        aria-label: GitHub
-      - icon: facebook
-        href: https://facebook.com/jacobkmcpherson/
-        aria-label: Facebook
-      - icon: instagram
-        href: https://instagram.com/jkmcpherson_25
-        aria-label: Instagram
-      - icon: youtube
-        href: https://youtube.com/@jacobkmcpherson
-        aria-label: YouTube
-      #- icon: medium
-      #  href: https://medium.com/@yourprofile
-      #  aria-label: Medium
       - icon: book
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
@@ -54,6 +33,27 @@ website:
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
+      - icon: linkedin
+        href: https://linkedin.com/in/jacobkmcpherson/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/JacobKMcPherson
+        aria-label: GitHub
+      - icon: twitter
+        href: https://x.com/JacobKMcPherson
+        aria-label: Twitter
+      - icon: facebook
+        href: https://facebook.com/jacobkmcpherson/
+        aria-label: Facebook
+      - icon: instagram
+        href: https://instagram.com/jkmcpherson_25
+        aria-label: Instagram
+      - icon: youtube
+        href: https://youtube.com/@jacobkmcpherson
+        aria-label: YouTube
+      #- icon: medium
+      #  href: https://medium.com/@yourprofile
+      #  aria-label: Medium
 
 format:
   html:
