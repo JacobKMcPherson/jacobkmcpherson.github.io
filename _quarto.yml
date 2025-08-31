@@ -30,7 +30,7 @@ website:
       - icon: github
         href: https://github.com/JacobKMcPherson
         aria-label: GitHub
-        - icon: facebook
+      - icon: facebook
         href: https://facebook.com/jacobkmcpherson/
         aria-label: Facebook
       - icon: instagram
