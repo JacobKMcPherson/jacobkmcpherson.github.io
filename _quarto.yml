@@ -24,15 +24,15 @@ website:
       - icon: book
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
-      - icon: globe
-        href: https://jacobkmcpherson.com
-        aria-label: Website
       - icon: calendar
         href: https://jacobkmcpherson.com/calendar
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
+      - icon: globe
+        href: https://jacobkmcpherson.com
+        aria-label: Website
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
