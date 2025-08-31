@@ -25,7 +25,7 @@ website:
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
       - icon: calendar
-        href: https://jacobkmcpherson.com/calendar
+        href: https://jacobkmcpherson.com/schedule
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
