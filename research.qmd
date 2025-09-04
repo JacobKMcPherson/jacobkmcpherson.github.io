@@ -2,14 +2,18 @@
 title: "Research"
 ---
 
-# Research
 
 ## Current Projects
 
-[Describe your current research projects here]
+My current research projects can be found at: 
+- [McPherson Group](https://mcphersongroup.github.io/)
+- [My GitHub](https://github.com/JacobKMcPherson)
 
 ## Publications
 
+My publications are also available at my 
+[Author.Link/JacobKMcPherson](https://author.link/JacobKMcPherson)
+<!-- 
 ### Journal Articles
 
 [List your journal publications here]
@@ -28,4 +32,4 @@ title: "Research"
 
 ## Collaborations
 
-[Information about research collaborations and partnerships]
+[Information about research collaborations and partnerships] -->
