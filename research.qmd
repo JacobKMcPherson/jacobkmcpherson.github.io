@@ -6,13 +6,13 @@ title: "Research"
 ## Current Projects
 
 My current research projects can be found at: 
-- [McPherson Group](https://mcphersongroup.github.io/)
-- [My GitHub](https://github.com/JacobKMcPherson)
+the [McPherson Group](https://mcphersongroup.github.io/)
+or [My GitHub](https://github.com/JacobKMcPherson).
 
 ## Publications
 
-My publications are also available at my 
-[Author.Link/JacobKMcPherson](https://author.link/JacobKMcPherson)
+My publications are also available through my 
+[Author.Link/](https://author.link/JacobKMcPherson)
 <!-- 
 ### Journal Articles
 
