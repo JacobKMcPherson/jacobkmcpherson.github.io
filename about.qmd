@@ -17,7 +17,7 @@ about:
 
 ## About Me
 
-Welcome to my personal website! I'm Jacob K. McPherson, and this is where I share my work, thoughts, and interests.
+Welcome to my personal website! My name is Jacob K. McPherson, and this is where I share my work, thoughts, life and interests.
 
 ## Education
 
@@ -27,10 +27,12 @@ Pharm.D., University of Houston College of Pharmacy
 
 Ph.D. (Pharmaceutical Sciences), University of Houston College of Pharmacy
 
-## Experience
-
-[Your professional experience here]
-
 ## Interests
 
-[Your research interests and hobbies here]
+Infectious diseases pharmacy practice and antimicrobial stewardship
+
+Antimicrobial resistance and genomic/public health surveillance
+
+Antimicrobial drug development and computational modeling
+
+The human gut microbiome, host-microbe interactions, and therapeutic modulation
