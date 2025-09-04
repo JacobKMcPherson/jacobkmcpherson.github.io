@@ -30,7 +30,7 @@ I'm always interested in appearing on podcasts to discuss my work and research. 
 <iframe 
     src="https://open.spotify.com/embed/show/2MydwKJpiKwiNRdxIzvFIt" 
     width="100%" 
-    height="232" 
+    height="100" 
     frameborder="0" 
     allowtransparency="true" 
     allow="encrypted-media">
@@ -39,7 +39,7 @@ I'm always interested in appearing on podcasts to discuss my work and research. 
 <iframe 
     src="https://open.spotify.com/embed/show/7jqm8WKNGpP2N7bjWyKBrt" 
     width="100%" 
-    height="232" 
+    height="100" 
     frameborder="0" 
     allowtransparency="true" 
     allow="encrypted-media">
@@ -48,7 +48,7 @@ I'm always interested in appearing on podcasts to discuss my work and research. 
 <iframe 
     src="https://open.spotify.com/embed/show/1D79kHPArirj7kVhQUBBCE" 
     width="100%" 
-    height="232" 
+    height="100" 
     frameborder="0" 
     allowtransparency="true" 
     allow="encrypted-media">
