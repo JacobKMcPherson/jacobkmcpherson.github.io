@@ -22,8 +22,8 @@ website:
         text: Gallery
     right:
       - icon: book
-        href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
-        aria-label: Google Scholar
+        href: https://author.link/JacobKMcPherson
+        aria-label: Author.Link
       - icon: calendar
         href: https://jacobkmcpherson.com/schedule
         aria-label: Calendar
