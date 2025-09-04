@@ -21,9 +21,11 @@ Welcome to my personal website! I'm Jacob K. McPherson, and this is where I shar
 
 ## Education
 
-- B.S. (Biological Sciences), University of Texas at Austin
-- Pharm.D., University of Houston College of Pharmacy
-- Ph.D. (Pharmaceutical Sciences), University of Houston College of Pharmacy
+B.S. (Biological Sciences), University of Texas at Austin
+
+Pharm.D., University of Houston College of Pharmacy
+
+Ph.D. (Pharmaceutical Sciences), University of Houston College of Pharmacy
 
 ## Experience
 
