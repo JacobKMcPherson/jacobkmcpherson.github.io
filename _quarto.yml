@@ -15,15 +15,15 @@ website:
       - href: gallery.qmd
 
     right:
-      - icon: book-fill
+      - icon: book
         href: https://author.link/JacobKMcPherson
         text: ""
         aria-label: Author.Link
-      - icon: calendar-fill
+      - icon: calendar
         href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xTLcE5R7MwYTlOhowUpeMjXN7cgT8h20PMXwGogkXIen9EUUabmsIjUjQS_eUPq5LWORiUZ0s
         text: ""
         aria-label: Calendar
-      - icon: envelope-fill
+      - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         text: ""
         aria-label: Email
@@ -42,7 +42,7 @@ website:
       - icon: bluesky
         href: https://bsky.app/profile/JacobKMcPherson.bsky.social
         text:  |
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.2em; vertical-align:middle;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.0em; vertical-align:middle;">
         aria-label: Bluesky
       - icon: twitter
         href: https://x.com/JacobKMcPherson
