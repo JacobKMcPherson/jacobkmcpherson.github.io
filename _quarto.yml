@@ -60,9 +60,9 @@ website:
       - icon: youtube
         href: https://youtube.com/@jacobkmcpherson
         aria-label: YouTube
-      #- icon: medium
-      #  href: https://medium.com/@yourprofile
-      #  aria-label: Medium
+      - icon: medium
+        href: https://jacobkmcpherson.medium.com/
+        aria-label: Medium
 
 format:
   html:
