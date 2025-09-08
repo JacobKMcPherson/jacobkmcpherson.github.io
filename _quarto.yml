@@ -19,7 +19,7 @@ website:
         text: ""
       - href: podcasts.qmd
         text: ""
-      - href: gallery.qmd
+      - href: gallery/index.qmd
         text: ""
 
     right:
