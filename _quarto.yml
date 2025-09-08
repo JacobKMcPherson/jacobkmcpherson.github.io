@@ -13,8 +13,6 @@ website:
         text: ""
       - href: about.qmd
         text: ""
-      - href: https://jacobkmcpherson.medium.com/
-        text: ""
       - href: research/index.qmd
         text: ""
       - href: podcasts.qmd
