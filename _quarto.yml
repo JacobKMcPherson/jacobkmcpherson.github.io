@@ -5,7 +5,7 @@ project:
 website:
   title: "Jacob K. McPherson"
   navbar:
-    left:
+    right:
       - icon: house
         href: index.qmd
         aria-label: Home
@@ -27,7 +27,6 @@ website:
       - icon: images
         href: gallery.qmd
         aria-label: Gallery
-    right:
       - icon: book
         href: https://author.link/JacobKMcPherson
         aria-label: Author.Link
