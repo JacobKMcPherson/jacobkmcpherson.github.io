@@ -1,1 +1,5 @@
 /* css styles */
+.navbar img {
+  height: 1.2em;
+  vertical-align: middle;
+}
