@@ -1,0 +1,25 @@
+---
+title: "Research"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+css: styles.css
+---
+
+Welcome to my research! 
+## Current Projects
+
+My current research projects can be found at: 
+the [McPherson Group](https://mcphersongroup.github.io/)
+or [My GitHub](https://github.com/JacobKMcPherson).
+
+## Publications
+
+My publications are also available through my 
+[Author.Link/](https://author.link/JacobKMcPherson)

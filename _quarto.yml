@@ -15,7 +15,7 @@ website:
         text: ""
       - href: blog/index.qmd
         text: ""
-      - href: research.qmd
+      - href: research/index.qmd
         text: ""
       - href: talks.qmd
         text: ""
