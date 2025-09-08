@@ -17,8 +17,6 @@ website:
         text: ""
       - href: research/index.qmd
         text: ""
-      - href: talks.qmd
-        text: ""
       - href: podcasts.qmd
         text: ""
       - href: gallery.qmd
