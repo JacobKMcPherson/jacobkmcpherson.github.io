@@ -10,24 +10,25 @@ website:
     left:
       - icon: house
         href: index.qmd
-        text: Home
+        #text: Home
       - icon: user
         href: about.qmd
-        text: About
+        #text: About
       - icon: pen
         href: blog/index.qmd
-        text: Blog
+        #text: Blog
       - icon: flask # or microscope
         href: research.qmd
-        text: Research
-      - href: talks.qmd
-        text: Talks
+        #text: Research
+      - icon: microphone
+        href: talks.qmd
+        #text: Talks
       - icon: podcast
         href: podcasts.qmd
-        text: Podcasts
+        #text: Podcasts
       - icon: images
         href: gallery.qmd
-        text: Gallery
+        #text: Gallery
     right:
       - icon: book
         href: https://author.link/JacobKMcPherson
