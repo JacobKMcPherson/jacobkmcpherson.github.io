@@ -2,8 +2,6 @@
 title: "Talks"
 ---
 
-# Talks & Presentations
-
 ## Upcoming Talks
 
 [List your upcoming presentations and talks here]

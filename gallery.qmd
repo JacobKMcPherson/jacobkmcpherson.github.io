@@ -2,8 +2,6 @@
 title: "Gallery"
 ---
 
-# Gallery
-
 ## Research Photos
 
 [Add photos from your research work, conferences, and field work]

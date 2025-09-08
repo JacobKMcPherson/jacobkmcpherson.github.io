@@ -2,8 +2,6 @@
 title: "Podcasts"
 ---
 
-# Podcasts
-
 ## My Podcast Appearances
 
 [List podcast episodes where you've been a guest] 
