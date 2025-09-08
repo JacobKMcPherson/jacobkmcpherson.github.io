@@ -5,59 +5,78 @@ project:
 website:
   title: "Jacob K. McPherson"
   navbar:
-    title: false
     left: 
       - icon: house-fill
         href: index.qmd
+        text: false
       - icon: info-circle-fill
         href: about.qmd
+        text: false
       - icon: pen-fill
         href: blog/index.qmd
+        text: false
       - icon: flask-fill
         href: research.qmd
+        text: false
       - icon: play-circle-fill
         href: talks.qmd
+        text: false
       - icon: spotify
         href: podcasts.qmd
-      - icon: images-fill
+        text: false
+      - icon: image-fill
         href: gallery.qmd
+        text: false
 
     right:
       - icon: book
         href: https://author.link/JacobKMcPherson
+        text: false
         aria-label: Author.Link
       - icon: calendar
         href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xTLcE5R7MwYTlOhowUpeMjXN7cgT8h20PMXwGogkXIen9EUUabmsIjUjQS_eUPq5LWORiUZ0s
+        text: false
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
+        text: false
         aria-label: Email
       - icon: globe
         href: https://jacobkmcpherson.com
+        text: false
         aria-label: Website
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
+        text: false
         aria-label: LinkedIn
       - icon: github
         href: https://github.com/JacobKMcPherson
+        text: false
         aria-label: GitHub
       - icon: bluesky
         href: https://bsky.app/profile/JacobKMcPherson.bsky.social
+        text:  |
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.2em; vertical-align:middle;">
         aria-label: Bluesky
       - icon: twitter
         href: https://x.com/JacobKMcPherson
+        text: false
         aria-label: Twitter
       - icon: facebook
         href: https://facebook.com/jacobkmcpherson/
+        text: false
         aria-label: Facebook
       - icon: instagram
         href: https://instagram.com/jkmcpherson_25
+        text: false
         aria-label: Instagram
       - icon: youtube
         href: https://youtube.com/@jacobkmcpherson
+        text: false
         aria-label: YouTube
       - icon: medium
         href: https://jacobkmcpherson.medium.com/
+        text: false
         aria-label: Medium
 
 format:
