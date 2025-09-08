@@ -6,27 +6,13 @@ website:
   title: "Jacob K. McPherson"
   navbar:
     left: 
-      - icon: house-fill
-        href: index.qmd
-        text: ""
-      - icon: info-circle-fill
-        href: about.qmd
-        text: ""
-      - icon: pen-fill
-        href: blog/index.qmd
-        text: ""
-      - icon: flask-fill
-        href: research.qmd
-        text: ""
-      - icon: play-circle-fill
-        href: talks.qmd
-        text: ""
-      - icon: spotify
-        href: podcasts.qmd
-        text: ""
-      - icon: image-fill
-        href: gallery.qmd
-        text: ""
+      - href: index.qmd
+      - href: about.qmd
+      - href: blog/index.qmd
+      - href: research.qmd
+      - href: talks.qmd
+      - href: podcasts.qmd
+      - href: gallery.qmd
 
     right:
       - icon: book
