@@ -5,7 +5,7 @@ project:
 website:
   title: "Jacob K. McPherson"
   navbar:
-    title: false                  # This removes the title from the navbar
+    title: false
     left: 
       - icon: house-fill
         href: index.qmd
@@ -19,7 +19,7 @@ website:
         href: talks.qmd
       - icon: spotify
         href: podcasts.qmd
-      - icon: images
+      - icon: images-fill
         href: gallery.qmd
 
     right:
