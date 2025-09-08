@@ -7,6 +7,10 @@
   display: none !important;
 }
 
+:root {
+  --bs-primary: white;
+}
+
 /* Example selector – may need adjustment for your theme */
 .navbar .fa-search, .navbar .bi-search {
   color: white !important;
