@@ -9,6 +9,7 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: true
+css: styles.css
 ---
 
 Welcome to my blog! Here you'll find my thoughts on research, technology, and other topics that interest me.
