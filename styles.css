@@ -1,5 +1,8 @@
 /* css styles */
 .navbar img {
-  height: 1.2em;
+  height: 1.0em;
   vertical-align: middle;
+}
+.navbar-brand {
+  display: none !important;
 }
