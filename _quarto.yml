@@ -2,8 +2,6 @@ project:
   type: website
   output-dir: docs
 
-icon-dir: icons
-
 website:
   title: "Jacob K. McPherson"
   navbar:
