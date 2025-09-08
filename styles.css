@@ -7,6 +7,11 @@
   display: none !important;
 }
 
+/* Example selector – may need adjustment for your theme */
+.navbar .fa-search, .navbar .bi-search {
+  color: white !important;
+}
+
 /* Header banner styling: white, light gray, and light blue */
 .header-banner {
   background: linear-gradient(90deg, #ffffff 0%, #f5f6fa 50%, #e3f2fd 100%);
