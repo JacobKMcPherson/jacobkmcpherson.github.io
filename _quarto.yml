@@ -4,7 +4,10 @@ project:
 
 website:
   title: "Jacob K. McPherson"
+  description: 
   navbar:
+    background: primary
+    search: true
     left: 
       - href: index.qmd
         text: ""
