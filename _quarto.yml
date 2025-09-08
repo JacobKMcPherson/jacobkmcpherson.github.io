@@ -39,6 +39,9 @@ website:
       - icon: github
         href: https://github.com/JacobKMcPherson
         aria-label: GitHub
+      - icon: bluesky
+        href: https://bsky.app/profile/JacobKMcPherson.bsky.social
+        aria-label: Bluesky
       - icon: twitter
         href: https://x.com/JacobKMcPherson
         aria-label: Twitter
