@@ -2,23 +2,31 @@ project:
   type: website
   output-dir: docs
 
+icon-dir: icons
+
 website:
   title: "Jacob K. McPherson"
   navbar:
     left:
-      - href: index.qmd
+      - icon: house
+        href: index.qmd
         text: Home
-      - href: about.qmd
+      - icon: user
+        href: about.qmd
         text: About
-      - href: blog/index.qmd
+      - icon: pen
+        href: blog/index.qmd
         text: Blog
-      - href: research.qmd
+      - icon: flask # or microscope
+        href: research.qmd
         text: Research
       - href: talks.qmd
         text: Talks
-      - href: podcasts.qmd
+      - icon: podcast
+        href: podcasts.qmd
         text: Podcasts
-      - href: gallery.qmd
+      - icon: images
+        href: gallery.qmd
         text: Gallery
     right:
       - icon: book
@@ -39,7 +47,7 @@ website:
       - icon: github
         href: https://github.com/JacobKMcPherson
         aria-label: GitHub
-      - text: "{{< iconify fa6-brands:bluesky size=2em title='Bluesky'>}}"
+      - icon: bluesky
         href: https://bsky.app/profile/JacobKMcPherson.bsky.social
         aria-label: Bluesky
       - icon: twitter
