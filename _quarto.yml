@@ -5,28 +5,23 @@ project:
 website:
   title: "Jacob K. McPherson"
   navbar:
-    right:
+    left: 
       - icon: house
         href: index.qmd
-        aria-label: Home
-      - icon: user
+      - icon: info-circle
         href: about.qmd
-        aria-label: About
       - icon: pen
         href: blog/index.qmd
-        aria-label: Blog
       - icon: flask # or microscope
         href: research.qmd
-        aria-label: Research
       - icon: microphone
         href: talks.qmd
-        aria-label: Talks
       - icon: podcast
         href: podcasts.qmd
-        aria-label: Podcasts
       - icon: images
         href: gallery.qmd
-        aria-label: Gallery
+
+    right:
       - icon: book
         href: https://author.link/JacobKMcPherson
         aria-label: Author.Link
