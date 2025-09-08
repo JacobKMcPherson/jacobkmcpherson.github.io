@@ -42,7 +42,7 @@ website:
       - icon: bluesky
         href: https://bsky.app/profile/JacobKMcPherson.bsky.social
         text:  |
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.0em; vertical-align:middle;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.0em; vertical-align:top;">
         aria-label: Bluesky
       - icon: twitter
         href: https://x.com/JacobKMcPherson
