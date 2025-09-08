@@ -27,15 +27,15 @@ website:
         href: mailto:jacobmcpherson@utexas.edu
         text: ""
         aria-label: Email
-      - icon: globe-fill
+      - icon: globe
         href: https://jacobkmcpherson.com
         text: ""
         aria-label: Website
-      - icon: linkedin-fill
+      - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         text: ""
         aria-label: LinkedIn
-      - icon: github-fill
+      - icon: github
         href: https://github.com/JacobKMcPherson
         text: ""
         aria-label: GitHub
