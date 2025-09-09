@@ -11,3 +11,5 @@ page-layout: full
 title-block-banner: false
 css: styles.css
 ---
+
+Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/) and [Substack](https://jacobkmcpherson.substack.com/)
