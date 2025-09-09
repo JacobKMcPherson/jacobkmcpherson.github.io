@@ -1,6 +1,9 @@
 ---
 title: "Jacob K. McPherson"
-title-block: false
+format:
+  html:
+    title-block-banner: false
+    title-block-style: none
 ---
 
 ::: {.grid}
