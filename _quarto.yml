@@ -16,8 +16,8 @@ website:
         text: ""
       - href: about.qmd
         text: ""
-      - href: https://jacobkmcpherson.medium.com/
-        text: "Blog"
+      - href: blog/index.qmd
+        text: ""
       - href: research/index.qmd
         text: ""
       - href: gallery/index.qmd
@@ -39,6 +39,12 @@ website:
       - icon: people
         href: https://mcphersongroup.github.io/
         aria-label: Research Group
+      - icon: substack
+        href: https://jacobkmcpherson.substack.com/
+        aria-label: Substack
+      - icon: medium
+        href: https://jacobkmcpherson.medium.com/
+        aria-label: Medium
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
@@ -62,9 +68,6 @@ website:
       - icon: youtube
         href: https://youtube.com/@jacobkmcpherson
         aria-label: YouTube
-      - icon: medium
-        href: https://jacobkmcpherson.medium.com/
-        aria-label: Medium
 
 format:
   html:
