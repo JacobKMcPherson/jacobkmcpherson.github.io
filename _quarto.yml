@@ -28,7 +28,7 @@ website:
         href: https://author.link/JacobKMcPherson
         text: ""
         aria-label: Author.Link
-      - icon: calendar
+      - icon: calendar-date
         href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xTLcE5R7MwYTlOhowUpeMjXN7cgT8h20PMXwGogkXIen9EUUabmsIjUjQS_eUPq5LWORiUZ0s
         text: ""
         aria-label: Calendar
@@ -36,7 +36,7 @@ website:
         href: mailto:jacobmcpherson@utexas.edu
         text: ""
         aria-label: Email
-      - icon: globe
+      - icon: globe-americas-fill
         href: https://jacobkmcpherson.com
         text: ""
         aria-label: Website
