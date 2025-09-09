@@ -29,6 +29,7 @@ website:
         aria-label: Author.Link
       - icon: flask
         href: https://mcphersongroup.github.io/
+        aria-label: Research
       - icon: calendar-date
         href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xTLcE5R7MwYTlOhowUpeMjXN7cgT8h20PMXwGogkXIen9EUUabmsIjUjQS_eUPq5LWORiUZ0s
         aria-label: Calendar
