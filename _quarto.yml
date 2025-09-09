@@ -39,12 +39,6 @@ website:
       - icon: people
         href: https://mcphersongroup.github.io/
         aria-label: Research Group
-      - icon: substack
-        href: https://jacobkmcpherson.substack.com/
-        aria-label: Substack
-      - icon: medium
-        href: https://jacobkmcpherson.medium.com/
-        aria-label: Medium
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
@@ -65,9 +59,21 @@ website:
       - icon: instagram
         href: https://instagram.com/jkmcpherson_25/
         aria-label: Instagram
+      - icon: threads
+        href: https://www.threads.com/@jkmcpherson_25
+        aria-label: Threads
       - icon: youtube
         href: https://youtube.com/@jacobkmcpherson
         aria-label: YouTube
+      - icon: spotify
+        href: https://open.spotify.com/user/1241595878
+        aria-label: Spotify
+      - icon: medium
+        href: https://jacobkmcpherson.medium.com/
+        aria-label: Medium
+      - icon: substack
+        href: https://jacobkmcpherson.substack.com/
+        aria-label: Substack
 
 format:
   html:
