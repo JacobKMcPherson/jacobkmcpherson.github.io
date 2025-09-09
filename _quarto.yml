@@ -5,7 +5,10 @@ project:
 website:
   title: "Jacob K. McPherson"
   description: "A Personal Website"
+  favicon: https://github.com/mcphersongroup/mcphersongroup.github.io/blob/main/favicon.ico
   navbar:
+    logo-href: https://github.com/mcphersongroup/mcphersongroup.github.io/blob/main/favicon.svg
+    pinned: true
     background: primary
     search: true
     left: 
