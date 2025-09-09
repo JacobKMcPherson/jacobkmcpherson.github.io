@@ -27,6 +27,15 @@
   border-bottom: 1px solid #e3f2fd;
 }
 
+@media (max-width: 768px) {
+  .navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar .navbar-toggler-icon,
+  .navbar .bi {
+    color: #003366 !important;
+  }
+}
+
 /* Make navbar-brand text visible on light background */
 .navbar-brand {
   font-weight: bold;
