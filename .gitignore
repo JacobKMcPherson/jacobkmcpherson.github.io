@@ -8,3 +8,8 @@ Thumbs.db
 .Rproj.user
 .Rhistory
 project.Rproj
+
+# Medium integration
+scripts/.published_posts.json
+__pycache__/
+*.pyc
