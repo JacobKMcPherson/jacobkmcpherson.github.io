@@ -24,6 +24,9 @@ website:
         text: ""
 
     right:
+      - icon: vector-pen
+        href: https://author.link/JacobKMcPherson/
+        aria-label: Author.Link
       - icon: book
         href: https://author.link/JacobKMcPherson/
         aria-label: Author.Link
@@ -45,11 +48,9 @@ website:
       - icon: github
         href: https://github.com/JacobKMcPherson/
         aria-label: GitHub
-      #- icon: bluesky
-      #  href: https://bsky.app/profile/JacobKMcPherson.bsky.social
-      #  text:  |
-      #    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.0em; vertical-align:middle;">
-      #  aria-label: Bluesky
+      - icon: bluesky
+        href: https://bsky.app/profile/jacobkmcpherson.bsky.social
+        aria-label: BlueSky
       - icon: twitter
         href: https://x.com/JacobKMcPherson/
         aria-label: Twitter
@@ -74,6 +75,7 @@ website:
       - icon: substack
         href: https://jacobkmcpherson.substack.com/
         aria-label: Substack
+
 
 format:
   html:
