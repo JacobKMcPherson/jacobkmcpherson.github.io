@@ -36,12 +36,12 @@ website:
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
-      - icon: building
-        href: https://jacobkmcpherson.com
-        aria-label: Business
       - icon: people
         href: https://mcphersongroup.github.io/
         aria-label: Research Group
+      - icon: building
+        href: https://jacobkmcpherson.com
+        aria-label: Business
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
