@@ -4,6 +4,7 @@
   vertical-align: middle;
 }
 .navbar-brand {
+  font-weight: bold;
   display: none !important;
 }
 
