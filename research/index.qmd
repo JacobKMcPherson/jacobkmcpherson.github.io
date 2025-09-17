@@ -1,16 +1,20 @@
 ---
-title: "Research"
+title: "Publications"
 listing:
-  contents: posts/**/*.qmd
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
+  - id: pubs
+    contents: ../research/posts/**/*.qmd
+    sort: "pub_number desc"
+    page-size: 30
+    filter-ui: true
+    fields: [image, pub_number, title, publication, author,url_source]
 page-layout: full
-title-block-banner: false
-css: styles.css
 ---
 
 Welcome to my research! My current projects can be found at: 
 the [McPherson Group](https://mcphersongroup.github.io/) and research socials: [Author.Link/](https://author.link/JacobKMcPherson)
+
+<hr>
+
+:::{#pubs}
+:::
+
