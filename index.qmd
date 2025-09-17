@@ -1,8 +1,9 @@
 ---
 title: "Jacob K. McPherson"
-title-block-banner: false
-title-block-style: none
-title-block: false
+format:
+  html:
+    title-block-banner: false
+    title-block-style: none
 ---
 
 ::: {.grid}
@@ -29,7 +30,9 @@ Check out my latest [blog posts](blog/index.qmd) for insights and updates on my 
 
 ## Contact
 
-Feel free to reach out if you'd like to connect, collaborate, or for business inquiries at [JacobKMcPherson.com](https://www.JacobKMcPherson.com)
+Feel free to reach out if you'd like to connect or collaborate
+
+*Business inquiries* at [JacobKMcPherson.com](https://www.JacobKMcPherson.com)
 :::
 
 :::

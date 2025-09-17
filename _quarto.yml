@@ -24,32 +24,33 @@ website:
         text: ""
 
     right:
-      - icon: book
+      - icon: vector-pen
         href: https://author.link/JacobKMcPherson/
         aria-label: Author.Link
+      - icon: book
+        href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
+        aria-label: Google Scholar
       - icon: calendar-date
-        href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2xTLcE5R7MwYTlOhowUpeMjXN7cgT8h20PMXwGogkXIen9EUUabmsIjUjQS_eUPq5LWORiUZ0s
+        href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0i34EJk2PjecumNnIJUbUlp9-YRCWhFhryFMquALSTcBgC4iHdbNo3w9a7hUQkIdgcPcMLAmgN
         aria-label: Calendar
       - icon: envelope
         href: mailto:jacobmcpherson@utexas.edu
         aria-label: Email
-      - icon: building
-        href: https://jacobkmcpherson.com
-        aria-label: Business
       - icon: people
         href: https://mcphersongroup.github.io/
         aria-label: Research Group
+      - icon: building
+        href: https://jacobkmcpherson.com
+        aria-label: Business
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
         aria-label: LinkedIn
       - icon: github
         href: https://github.com/JacobKMcPherson/
         aria-label: GitHub
-      #- icon: bluesky
-      #  href: https://bsky.app/profile/JacobKMcPherson.bsky.social
-      #  text:  |
-      #    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="Bluesky" style="height:1.0em; vertical-align:middle;">
-      #  aria-label: Bluesky
+      - icon: bluesky
+        href: https://bsky.app/profile/jacobkmcpherson.bsky.social
+        aria-label: BlueSky
       - icon: twitter
         href: https://x.com/JacobKMcPherson/
         aria-label: Twitter
@@ -74,6 +75,7 @@ website:
       - icon: substack
         href: https://jacobkmcpherson.substack.com/
         aria-label: Substack
+
 
 format:
   html:
