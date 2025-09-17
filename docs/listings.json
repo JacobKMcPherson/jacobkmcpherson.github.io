@@ -4,5 +4,11 @@
     "items": [
       "/blog/posts/welcome.html"
     ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/publications/20250917_test/index.html"
+    ]
   }
 ]
