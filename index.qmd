@@ -5,6 +5,7 @@ format:
     title-block-banner: false
     title-block-style: none
 ---
+<!--- remove title from top of --->
 
 ::: {.grid}
 
