@@ -1,0 +1,17 @@
+---
+title: "This is a test post"
+author: ["Names in quotes", "Separate by commas"]
+publication: "Journal, **issue**, _page_ (2024)"
+categories: 
+   - "infectious-diseases"
+   - "antimicrobial-resistance"
+   - "human-gut-microbiome"
+url_source: 
+url_preprint: 
+journ: "Journal"
+issue: issue
+page: page
+year: 2025
+image: featured.jpg
+pub_number: 
+---

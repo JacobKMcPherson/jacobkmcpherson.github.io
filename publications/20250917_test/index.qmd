@@ -1,8 +1,8 @@
 ---
 title: "This is a test post"
-author: ["Names in quotes", "Separate by commas"]
+author: ["Jacob K. McPherson"]
 publication: "Journal, **issue**, _page_ (2024)"
- categories: 
+categories: 
    - "infectious-diseases"
    - "antimicrobial-resistance"
    - "human-gut-microbiome"

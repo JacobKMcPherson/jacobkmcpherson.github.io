@@ -76,6 +76,8 @@ website:
         href: https://jacobkmcpherson.substack.com/
         aria-label: Substack
 
+  page-footer:
+    center: "Copyright © 2025 Jacob K. McPherson - All Rights Reserved"
 
 format:
   html:
