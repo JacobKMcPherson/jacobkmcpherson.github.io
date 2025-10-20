@@ -34,7 +34,7 @@ website:
         href: https://calendar.app.google/U3ZhDHVpvkYRY2aj7
         aria-label: Calendar
       - icon: envelope
-        href: mailto:jacobmcpherson@utexas.edu
+        href: mailto:jacobmcpherson@utexas.edu;jkmcpherson@uh.edu;jacob@jacobkmcpherson.com
         aria-label: Email
       - icon: people
         href: https://mcphersongroup.github.io/
