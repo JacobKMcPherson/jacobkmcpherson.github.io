@@ -38,7 +38,7 @@ website:
         aria-label: Email
       - icon: people
         href: https://mcphersongroup.github.io/
-        aria-label: Research Group
+        aria-label: Research Lab
       - icon: building
         href: https://jacobkmcpherson.com
         aria-label: Business
