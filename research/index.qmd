@@ -11,7 +11,7 @@ page-layout: full
 ---
 
 Welcome to my research! My current projects can be found at: 
-the [McPherson Group](https://mcphersongroup.github.io/) and research socials: [Author.Link/](https://author.link/JacobKMcPherson)
+the [McPherson Lab](https://mcphersongroup.github.io/) and research socials: [Author.Link/](https://author.link/JacobKMcPherson)
 
 <hr>
 
