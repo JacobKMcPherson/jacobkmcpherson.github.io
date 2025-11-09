@@ -11,7 +11,11 @@ page-layout: full
 ---
 
 Welcome to my research! My current projects can be found at: 
-the [McPherson Lab](https://mcphersongroup.github.io/) and research socials: [Author.Link/](https://author.link/JacobKMcPherson)
+the [McPherson Lab](https://mcphersongroup.github.io/) and research socials: 
+[Scholar](https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en),
+[Scopus](https://www.scopus.com/authid/detail.uri?authorId=57204192355)
+[ResearchGate](https://www.researchgate.net/profile/jacob-mcpherson),
+[ORCID](https://orcid.org/0000-0001-5486-4945).
 
 <hr>
 
