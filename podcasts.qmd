@@ -85,9 +85,9 @@ async function loadRSSFeed(feedUrl, elementId, feedName) {
 
 // Load feeds when page loads
 document.addEventListener('DOMContentLoaded', function() {
-  loadRSSFeed('https://www.nature.com/nature/articles?type=nature-podcast.rss', 'nature-feed', 'Nature Podcast');
-  loadRSSFeed('https://www.science.org/rss/podcast.xml', 'science-feed', 'Science Podcast');
-  loadRSSFeed('https://www.thelancet.com/rssfeed/lancet_current.xml', 'lancet-feed', 'The Lancet');
+  loadRSSFeed('https://feeds.acast.com/public/shows/0185cea5-9e3b-4b82-a887-26f91f92765f', 'nature-feed', 'Nature Podcast');
+  loadRSSFeed('https://feeds.megaphone.fm/AAAS8717073854', 'science-feed', 'Science Podcast');
+  loadRSSFeed('https://feeds.buzzsprout.com/861868.rss', 'lancet-feed', 'The Lancet');
 });
 </script>
 ```
