@@ -20,6 +20,8 @@ website:
         text: ""
       - href: research/index.qmd
         text: ""
+      - href: podcasts.qmd
+        text: ""
       - href: gallery/index.qmd
         text: ""
 
@@ -40,7 +42,7 @@ website:
         href: https://mcphersongroup.github.io/
         aria-label: Research Lab
       - icon: building
-        href: https://jacobkmcpherson.com
+        href: https://jacobkmcpherson.com/contact
         aria-label: Business
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/
