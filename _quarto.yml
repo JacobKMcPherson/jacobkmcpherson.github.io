@@ -39,7 +39,7 @@ website:
         href: mailto:jacobmcpherson@utexas.edu;jkmcpherson@uh.edu;jacob@jacobkmcpherson.com
         aria-label: Email
       - icon: people
-        href: https://mcphersongroup.github.io/
+        href: https://mcphersonlab.github.io/
         aria-label: Research Lab
       - icon: building
         href: https://jacobkmcpherson.com/contact
