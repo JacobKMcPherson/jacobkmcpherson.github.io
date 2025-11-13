@@ -13,88 +13,29 @@ Stay up to date with the latest research and discussions from leading scientific
 
 The Nature Podcast features interviews with leading scientists and discussion of the latest research published in Nature and the Nature family of journals.
 
-**RSS Feed:** [Subscribe to Nature Podcast](https://www.nature.com/nature/articles?type=nature-podcast.rss)
-
 ```{=html}
-<div id="nature-feed" style="max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-bottom: 20px;">
-<p>Loading Nature Podcast feed...</p>
-</div>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2MydwKJpiKwiNRdxIzvFIt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 ```
 
 ### Science Podcast
 
 The Science Podcast features discussions of the latest research and news from Science magazine.
 
-**RSS Feed:** [Subscribe to Science Podcast](https://www.science.org/rss/podcast.xml)
-
 ```{=html}
-<div id="science-feed" style="max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-bottom: 20px;">
-<p>Loading Science Podcast feed...</p>
-</div>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6S1RCtUXQ7UvKUTB77x7xH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 ```
 
 ### The Lancet Voice
 
 The Lancet Voice features interviews and discussions about the latest medical research published in The Lancet.
 
-**RSS Feed:** [Subscribe to The Lancet](https://www.thelancet.com/rssfeed/lancet_current.xml)
-
 ```{=html}
-<div id="lancet-feed" style="max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-bottom: 20px;">
-<p>Loading The Lancet feed...</p>
-</div>
-```
-
-```{=html}
-<script>
-// Function to parse and display RSS feed using RSS2JSON service
-async function loadRSSFeed(feedUrl, elementId, feedName) {
-  const div = document.getElementById(elementId);
-  try {
-    // Using rss2json.com as a CORS proxy for RSS feeds
-    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    
-    if (data.status === 'ok' && data.items && data.items.length > 0) {
-      let html = `<h4>${data.feed.title || feedName}</h4>`;
-      html += '<ul style="list-style-type: none; padding-left: 0;">';
-      
-      // Display up to 10 items
-      data.items.slice(0, 10).forEach(item => {
-        const date = new Date(item.pubDate).toLocaleDateString();
-        html += `
-          <li style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
-            <strong><a href="${item.link}" target="_blank">${item.title}</a></strong><br/>
-            <small style="color: #666;">${date}</small>
-            ${item.description ? `<p style="margin-top: 5px;">${item.description.substring(0, 200)}...</p>` : ''}
-          </li>
-        `;
-      });
-      
-      html += '</ul>';
-      div.innerHTML = html;
-    } else {
-      div.innerHTML = `<p>Unable to load ${feedName} feed. Please visit the <a href="${feedUrl}" target="_blank">direct RSS feed</a>.</p>`;
-    }
-  } catch (error) {
-    console.error(`Error loading ${feedName} feed:`, error);
-    div.innerHTML = `<p>Error loading feed. Please visit the <a href="${feedUrl}" target="_blank">direct RSS feed</a>.</p>`;
-  }
-}
-
-// Load feeds when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  loadRSSFeed('https://feeds.acast.com/public/shows/0185cea5-9e3b-4b82-a887-26f91f92765f', 'nature-feed', 'Nature Podcast');
-  loadRSSFeed('https://feeds.megaphone.fm/AAAS8717073854', 'science-feed', 'Science Podcast');
-  loadRSSFeed('https://feeds.buzzsprout.com/861868.rss', 'lancet-feed', 'The Lancet');
-});
-</script>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/7jqm8WKNGpP2N7bjWyKBrt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 ```
 
 ---
 
 ## About These Podcasts
 
-These podcasts provide valuable insights into cutting-edge research across various scientific disciplines. Each feed is updated regularly with new episodes featuring expert interviews, research discussions, and scientific news.
+These podcasts provide valuable insights into cutting-edge research across various scientific disciplines. Each is updated regularly with new episodes featuring expert interviews, research discussions, and scientific news.
 
