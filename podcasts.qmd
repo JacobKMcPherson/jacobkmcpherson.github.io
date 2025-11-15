@@ -14,7 +14,7 @@ Stay up to date with the latest research and discussions from leading scientific
 ```{=html}
 <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/show/2MydwKJpiKwiNRdxIzvFIt"
-        width="100%" height="100" frameborder="0"
+        width="100%" height="160" frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
@@ -26,7 +26,7 @@ Stay up to date with the latest research and discussions from leading scientific
 ```{=html}
 <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/show/6S1RCtUXQ7UvKUTB77x7xH"
-        width="100%" height="100" frameborder="0"
+        width="100%" height="160" frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
@@ -38,7 +38,7 @@ Stay up to date with the latest research and discussions from leading scientific
 ```{=html}
 <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/show/7jqm8WKNGpP2N7bjWyKBrt"
-        width="100%" height="100" frameborder="0"
+        width="100%" height="160" frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
@@ -49,7 +49,7 @@ Stay up to date with the latest research and discussions from leading scientific
 ```{=html}
 <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/show/229VuDiWHzVc9S5OwBfLiY"
-        width="100%" height="100" frameborder="0"
+        width="100%" height="160" frameborder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
