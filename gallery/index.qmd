@@ -13,7 +13,7 @@ css: styles.css
 ---
 
 <!-- YouTube playlist embed -->
-{=html}
+
 <iframe
   width="100%"
   height="380"
@@ -24,4 +24,4 @@ css: styles.css
   allowfullscreen
   loading="lazy">
 </iframe>
-{/html}
+
