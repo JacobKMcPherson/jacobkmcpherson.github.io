@@ -13,7 +13,7 @@ pub_number: 20251201
 ---
 
 
-# Exploration & Purpose
+# Adventure & Purpose
 ## The History and Future Directions of the Human Endeavors of Science, Technology, Engineering & Medicine to Make a Better World Today for Generations of Tomorrow
 
 ::: {#fig-mypic .center}
@@ -24,7 +24,7 @@ Caption for the image.
 
 🔭
 
-### Exploration & Purpose is my journey
+### Adventure & Purpose is my journey
 through the past, present, and future of human ingenuity—where curiosity drives discovery and purpose guides progress. This series reflects on how science, technology, engineering, and medicine have shaped our world, and how today’s breakthroughs lay the foundation for a better tomorrow.
 
 🔬
