@@ -1,5 +1,6 @@
 ---
 title: "Adventure & Purpose"
+subtitle: "The History and Future Directions of the Human Endeavors of Science, Technology, Engineering & Medicine to Make a Better World Today for Generations of Tomorrow"
 author: ["Jacob K. McPherson"]
 categories: 
    - "science"
@@ -11,10 +12,6 @@ year: 2025
 image: featured.jpg
 pub_number: 20251201
 ---
-
-
-# Adventure & Purpose
-## The History and Future Directions of the Human Endeavors of Science, Technology, Engineering & Medicine to Make a Better World Today for Generations of Tomorrow
 
 ::: {#fig-mypic .center}
 ![](featured.jpg){width=70%}
