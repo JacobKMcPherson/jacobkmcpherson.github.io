@@ -1,5 +1,5 @@
 ---
-title: "Exploration & Purpose"
+title: "Adventure & Purpose"
 author: ["Jacob K. McPherson"]
 categories: 
    - "science"
