@@ -6,7 +6,7 @@ listing:
   type: default
   categories: true
   sort-ui: true
-  filter-ui: true
+  filter-ui: false
   fields: [image, pub_number, title, url_source]
 page-layout: full
 title-block-banner: false
