@@ -13,4 +13,4 @@ title-block-banner: false
 css: styles.css
 ---
 
-Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/) and [Substack](https://jacobkmcpherson.substack.com/)
+Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/), [Substack](https://jacobkmcpherson.substack.com/), and my [website](https://jacobkmcpherson.com/) [blog](https://jacobkmcpherson.com/blog) (account creation required). 

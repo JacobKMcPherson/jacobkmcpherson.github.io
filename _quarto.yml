@@ -20,27 +20,29 @@ website:
         text: ""
       - href: research/index.qmd
         text: ""
+      - href: podcasts.qmd
+        text: ""
       - href: gallery/index.qmd
         text: ""
 
     right:
       - icon: vector-pen
-        href: https://author.link/JacobKMcPherson/
-        aria-label: Author.Link
+        href: https://www.scopus.com/authid/detail.uri?authorId=57204192355
+        aria-label: SCOPUS
       - icon: book
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
       - icon: calendar-date
-        href: https://scheduler.zoom.us/jacobkmcpherson
+        href: https://calendar.app.google/U3ZhDHVpvkYRY2aj7
         aria-label: Calendar
       - icon: envelope
-        href: mailto:jacobmcpherson@utexas.edu
+        href: mailto:jacobmcpherson@utexas.edu;jkmcpherson@uh.edu;jacob@jacobkmcpherson.com
         aria-label: Email
       - icon: people
-        href: https://mcphersongroup.github.io/
-        aria-label: Research Group
+        href: https://mcphersonlab.github.io/
+        aria-label: Research Lab
       - icon: building
-        href: https://jacobkmcpherson.com
+        href: https://jacobkmcpherson.com/contact
         aria-label: Business
       - icon: linkedin
         href: https://linkedin.com/in/jacobkmcpherson/

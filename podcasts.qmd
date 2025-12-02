@@ -1,0 +1,63 @@
+---
+title: "Podcasts"
+format:
+  html:
+    toc: true
+---
+
+## Featured Academic Podcasts
+
+Stay up to date with the latest research and discussions from leading scientific journals.
+
+### Nature Podcast
+
+```{=html}
+<iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/show/2MydwKJpiKwiNRdxIzvFIt"
+        width="100%" height="160" frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+</iframe>
+```
+
+### Science Podcast
+
+```{=html}
+<iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/show/6S1RCtUXQ7UvKUTB77x7xH"
+        width="100%" height="160" frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+</iframe>
+```
+
+### The Lancet Voice
+
+```{=html}
+<iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/show/7jqm8WKNGpP2N7bjWyKBrt"
+        width="100%" height="160" frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+</iframe>
+```
+### JAMA Clinical Reviews
+
+```{=html}
+<iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/show/229VuDiWHzVc9S5OwBfLiY"
+        width="100%" height="160" frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+</iframe>
+```
+---
+
+## About These Podcasts
+
+These podcasts provide valuable insights into cutting-edge research across various scientific disciplines. Each is updated regularly with new episodes featuring expert interviews, research discussions, and scientific news.
+

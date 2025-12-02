@@ -12,3 +12,16 @@ title-block-banner: false
 css: styles.css
 ---
 
+<!-- YouTube playlist embed -->
+
+<iframe
+  width="100%"
+  height="380"
+  src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iQWI4QSt7FtomJhGDpnUlgN"
+  title="YouTube playlist"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+
