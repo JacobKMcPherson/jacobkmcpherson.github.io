@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 about:
   template: jolla
   image: profile.svg
@@ -15,9 +15,7 @@ about:
       href: https://github.com/JacobKMcPherson
 ---
 
-Welcome to my personal website! This is where I share my work, thoughts, and interests.
-
-## Education
+### Education
 
 B.S. (Biological Sciences), University of Texas at Austin
 
@@ -25,12 +23,9 @@ Pharm.D., University of Houston College of Pharmacy
 
 Ph.D. (Pharmaceutical Sciences), University of Houston College of Pharmacy
 
-## Interests
+### Interests
 
-
-My personal interests revolve around the exploration and adventures of life, including: 
-
-🏞️ mountains 
+🏞️ mountains
 
 🎣 fishing
 
