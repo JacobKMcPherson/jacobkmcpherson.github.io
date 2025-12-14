@@ -1,7 +1,7 @@
 ---
 title: "This is a test post"
 author: ["Names in quotes", "Separate by commas"]
-publication: "Journal, **issue**, _page_ (2024)"
+publication: "Journal (2024)"
 categories: 
    - "infectious-diseases"
    - "antimicrobial-resistance"
