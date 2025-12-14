@@ -12,6 +12,7 @@ journ: "Journal"
 issue: issue
 page: page
 year: 2025
+doi: 10.1038/nature12373
 image: featured.jpg
 pub_number: 
 ---
