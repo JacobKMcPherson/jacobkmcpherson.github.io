@@ -7,7 +7,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
   
@@ -16,7 +16,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
     
@@ -25,7 +25,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
 
@@ -34,7 +34,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
 
@@ -43,7 +43,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
 
@@ -52,7 +52,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
     
@@ -61,7 +61,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
     
@@ -70,7 +70,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
     
@@ -79,7 +79,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
     
@@ -88,7 +88,7 @@ listing:
     sort: "date desc"
     type: default
     categories: true
-    sort-ui: false
+    sort-ui: true
     filter-ui: true
     fields: [image, title, url_source]
   
@@ -102,70 +102,32 @@ Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.co
 
 Here are some of my latest posts:
 
-###[**My Personal SubStack**](https://jacobkmcpherson.substack.com/)
-
 ::: {.jacobkmcpherson}
 :::
-
-###[**Infectious Diseases**](https://infectiousdiseases.substack.com/)
-
-*A blog about infectious diseases, epidemiology, and public health.*
 
 ::: {.infectiousdiseases}
 :::
 
-[**The Health of Nations**](https://thehealthofnations.substack.com/)
-
-*A blog about global health, health policy, and improving health outcomes worldwide.*
-
 ::: {.thehealthofnations}
 :::
-
-###[**Primary Education**](https://primaryeducation.substack.com/)
-
-*A blog about improving primary education globally.*
 
 ::: {.primaryeducation}
 :::
 
-###[**Investment Theory**](https://investmenttheory.substack.com/)
-
-*An amateur take on financial markets, investing, and economics.*
-
 ::: {.investmenttheory}
 :::
-
-###[**Receptor Theory**](https://receptortheory.substack.com/)
-
-*A blog about pharmacodynamics, drug-receptor interactions, and the principles of receptor theory.*
 
 ::: {.receptortheory}
 :::
 
-###[**Pharmacological**](https://pharmacological.substack.com/)
-
-*A blog about therapeutic science.*
-
 ::: {.pharmacological}
 :::
-
-###[**Drug Dev**](https://drugdev.substack.com/)
-
-*A blog about drug development, pharmaceutical research, and the journey from lab to market.*
 
 ::: {.drugdev}
 :::
 
-###[**The Pharmacologist**](https://thepharmacologist.substack.com/)
-
-*A blog about drug mechanisms*
-
 ::: {.thepharmacologist}
 :::
-
-###[**The Clinician Scientist**](https://clinicianscientist.substack.com/)
-
-*A blog about translational medicine, clinical research, and the intersection of science and patient care.*
 
 ::: {.clinicianscientist}
 :::
