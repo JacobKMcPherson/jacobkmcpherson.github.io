@@ -1,16 +1,133 @@
 ---
 title: "Blog"
+
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: false
-  fields: [image, pub_number, title, url_source]
+  - id: jacobkmcpherson
+    contents: posts
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+  
+  - id: clinicianscientist
+    contents: clinicianscientist
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+    
+  - id: drugdev
+    contents: drugdev
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+
+  - id: infectiousdiseases
+    contents: infectiousdiseases
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+
+  - id: investmenttheory
+    contents: investmenttheory
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+
+  - id: pharmacological
+    contents: pharmacological
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+    
+  - id: primaryeducation
+    contents: primaryeducation
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+    
+  - id: receptortheory
+    contents: receptortheory
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+    
+  - id: thehealthofnations
+    contents: thehealthofnations
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+    
+  - id: thepharmacologist
+    contents: thepharmacologist
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: false
+    fields: [image, pub_number, title, url_source]
+  
 page-layout: full
 title-block-banner: false
 css: styles.css
 ---
 
 Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/), [Substack](https://jacobkmcpherson.substack.com/), and my website [blog](https://jacobkmcpherson.com/blog). 
+
+
+Here are some of my latest posts:
+
+::: {.jacobkmcpherson}
+:::
+
+::: {.infectiousdiseases}
+:::
+
+::: {.thehealthofnations}
+:::
+
+::: {.primaryeducation}
+:::
+
+::: {.investmenttheory}
+:::
+
+::: {.receptortheory}
+:::
+
+::: {.pharmacological}
+:::
+
+::: {.thepharmacologist}
+:::
+
+::: {.drugdev}
+:::
+
+::: {.clinicianscientist}
+:::
