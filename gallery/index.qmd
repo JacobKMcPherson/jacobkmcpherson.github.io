@@ -10,6 +10,9 @@ listing:
 page-layout: full
 title-block-banner: false
 css: styles.css
+comments:
+  giscus:
+    repo: JacobKMcPherson/jacobkmcpherson.github.io
 ---
 
 <!-- YouTube playlist embed -->

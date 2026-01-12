@@ -15,4 +15,7 @@ year: 2025
 doi: 10.1038/nature12373
 image: featured.jpg
 pub_number: 
+comments:
+  giscus:
+    repo: JacobKMcPherson/jacobkmcpherson.github.io
 ---

@@ -11,6 +11,9 @@ url_source:
 year: 2025
 image: featured.jpg
 pub_number: 20251201
+comments:
+  giscus:
+    repo: JacobKMcPherson/jacobkmcpherson.github.io
 ---
 
 ::: {#fig-mypic .center}
