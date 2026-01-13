@@ -59,10 +59,10 @@ comments:
 
 ## Instagram Panels
 
-### Instagram Posts & Reels
+### Nature Journal Posts & Reels
 
-<!-- Replace POST_ID with your Instagram post ID from the URL (e.g., https://www.instagram.com/p/POST_ID/) -->
-<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_ID/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+<!-- Instagram feed from @nature_the_journal - Replace with specific post URL for individual posts -->
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/nature_the_journal/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
 </blockquote>
 
 <script async src="//www.instagram.com/embed.js"></script>
