@@ -15,7 +15,9 @@ comments:
     repo: JacobKMcPherson/jacobkmcpherson.github.io
 ---
 
-<!-- YouTube playlist embed -->
+## YouTube Panels
+
+### YouTube Playlist
 
 <iframe
   width="100%"
@@ -27,4 +29,39 @@ comments:
   allowfullscreen
   loading="lazy">
 </iframe>
+
+### YouTube Channel
+
+<iframe
+  width="100%"
+  height="380"
+  src="https://www.youtube.com/embed?listType=user_uploads&list=jacobkmcpherson"
+  title="YouTube channel"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+
+### Featured YouTube Video
+
+<iframe
+  width="100%"
+  height="380"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="Featured YouTube video"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+
+## Instagram Panels
+
+### Instagram Posts & Reels
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/jkmcpherson_25/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+</blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
