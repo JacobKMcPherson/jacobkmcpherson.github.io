@@ -9,3 +9,4 @@ Thumbs.db
 .Rhistory
 project.Rproj
 docs/*
+**/*.quarto_ipynb
