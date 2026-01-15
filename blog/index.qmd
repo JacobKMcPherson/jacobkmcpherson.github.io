@@ -38,8 +38,8 @@ listing:
     filter-ui: true
     fields: [image, title, url_source]
 
-  - id: investmenttheory
-    contents: investmenttheory
+  - id: antimicrobialresistance
+    contents: antimicrobialresistance
     sort: "date desc"
     type: default
     categories: true
@@ -56,8 +56,8 @@ listing:
     filter-ui: true
     fields: [image, title, url_source]
     
-  - id: primaryeducation
-    contents: primaryeducation
+  - id: humanmicrobiome
+    contents: humanmicrobiome
     sort: "date desc"
     type: default
     categories: true
@@ -67,15 +67,6 @@ listing:
     
   - id: receptortheory
     contents: receptortheory
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-    
-  - id: thehealthofnations
-    contents: thehealthofnations
     sort: "date desc"
     type: default
     categories: true
@@ -108,13 +99,10 @@ Here are some of my latest posts:
 ::: {.infectiousdiseases}
 :::
 
-::: {.thehealthofnations}
+::: {.antimicrobialresistance}
 :::
 
-::: {.primaryeducation}
-:::
-
-::: {.investmenttheory}
+::: {.humanmicrobiome}
 :::
 
 ::: {.receptortheory}
