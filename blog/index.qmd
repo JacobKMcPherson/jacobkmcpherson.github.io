@@ -2,120 +2,16 @@
 title: "Blog"
 
 listing:
-  - id: jacobkmcpherson
-    contents: posts
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-  
-  - id: clinicianscientist
-    contents: clinicianscientist
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-    
-  - id: drugdev
-    contents: drugdev
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
 
-  - id: infectiousdiseases
-    contents: infectiousdiseases
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-
-  - id: antimicrobialresistance
-    contents: antimicrobialresistance
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-
-  - id: pharmacological
-    contents: pharmacological
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-    
-  - id: humanmicrobiome
-    contents: humanmicrobiome
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-    
-  - id: receptortheory
-    contents: receptortheory
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-    
-  - id: thepharmacologist
-    contents: thepharmacologist
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    fields: [image, title, url_source]
-  
 page-layout: full
 title-block-banner: false
 css: styles.css
 ---
 
-Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/), [Substack](https://substack.com/@jacobkmcpherson), and my website [blog](https://jacobkmcpherson.com/blog). 
-
-
-Here are some of my latest posts:
-
-::: {.jacobkmcpherson}
-:::
-
-::: {.infectiousdiseases}
-:::
-
-::: {.antimicrobialresistance}
-:::
-
-::: {.humanmicrobiome}
-:::
-
-::: {.receptortheory}
-:::
-
-::: {.pharmacological}
-:::
-
-::: {.drugdev}
-:::
-
-::: {.thepharmacologist}
-:::
-
-::: {.clinicianscientist}
-:::
+Welcome to my blog! Also available at [Medium](https://jacobkmcpherson.medium.com/), [Substack](https://substack.com/@jacobkmcpherson), and my website [blog](https://jacobkmcpherson.com/blog).
