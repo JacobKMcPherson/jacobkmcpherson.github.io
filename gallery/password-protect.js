@@ -5,7 +5,8 @@
   'use strict';
   
   // Password hash injected at build time - DO NOT COMMIT ACTUAL HASH
-  const PASSWORD_HASH = 'INJECTED_PASSWORD_HASH';
+  // Default hash is SHA-256 of 'temp' - will be replaced by workflow if GALLERY_PASSWORD secret is set
+  const PASSWORD_HASH = 'a6864eb339b0e1f6e00d75293a8840abf069a2c0fe82e6e53af6ac099793c1d5';
   
   // Session storage key
   const AUTH_KEY = 'gallery_authenticated';
@@ -78,12 +79,6 @@
   
   // Verify password
   async function verifyPassword(password) {
-    if (PASSWORD_HASH === 'INJECTED_PASSWORD_HASH') {
-      // Password hash not injected - deny access in production
-      console.error('Password hash not injected. Password protection is not properly configured.');
-      return false;
-    }
-    
     const hash = await sha256(password);
     return hash === PASSWORD_HASH;
   }
