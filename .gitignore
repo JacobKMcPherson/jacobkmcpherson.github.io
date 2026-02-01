@@ -10,3 +10,7 @@ Thumbs.db
 project.Rproj
 docs/*
 **/*.quarto_ipynb
+
+# Node.js dependencies for gallery tests
+gallery/node_modules/
+gallery/package-lock.json
