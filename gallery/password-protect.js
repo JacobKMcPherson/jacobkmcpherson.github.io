@@ -7,9 +7,15 @@
   // Password hash injected at build time - DO NOT COMMIT ACTUAL HASH
   // Default hash is SHA-256 of 'temp' - will be replaced by workflow if GALLERY_PASSWORD secret is set
   const PASSWORD_HASH = 'a6864eb339b0e1f6e00d75293a8840abf069a2c0fe82e6e53af6ac099793c1d5';
+  const DEFAULT_HASH = 'a6864eb339b0e1f6e00d75293a8840abf069a2c0fe82e6e53af6ac099793c1d5';
   
   // Session storage key
   const AUTH_KEY = 'gallery_authenticated';
+  
+  // Warn if using default password
+  if (PASSWORD_HASH === DEFAULT_HASH) {
+    console.warn('Gallery is using default password. Please set GALLERY_PASSWORD secret for production use.');
+  }
   
   // Simple SHA-256 hash function
   async function sha256(message) {
