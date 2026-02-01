@@ -48,9 +48,9 @@ jobs:
           if [ -n "$GALLERY_PASSWORD" ]; then
             PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
             echo "Injecting password hash into gallery password protection script..."
-            sed -i "s/INJECTED_PASSWORD_HASH/$PASSWORD_HASH/g" gallery/password-protect.js
+            sed -i "s/const PASSWORD_HASH = '[^']*';/const PASSWORD_HASH = '$PASSWORD_HASH';/" gallery/password-protect.js
           else
-            echo "Warning: GALLERY_PASSWORD secret not set. Password protection will not be active."
+            echo "Warning: GALLERY_PASSWORD secret not set. Using default password 'temp'."
           fi
 
       - name: Render Quarto Project
