@@ -10,6 +10,8 @@ listing:
 page-layout: full
 title-block-banner: false
 css: style.css
+resources:
+  - password-protect.js
 format:
   html:
     include-after-body:
