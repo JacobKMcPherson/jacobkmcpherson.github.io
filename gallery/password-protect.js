@@ -100,20 +100,32 @@
       return;
     }
     
+    // Prevent multiple submissions
+    if (submitBtn.disabled) {
+      return;
+    }
+    
     submitBtn.disabled = true;
     submitBtn.textContent = 'Verifying...';
     errorDiv.textContent = '';
     
-    const isValid = await verifyPassword(password);
-    
-    if (isValid) {
-      setAuthenticated();
-      overlay.remove();
-      showContent();
-    } else {
-      errorDiv.textContent = 'Incorrect password. Please try again.';
-      input.value = '';
-      input.focus();
+    try {
+      const isValid = await verifyPassword(password);
+      
+      if (isValid) {
+        setAuthenticated();
+        overlay.remove();
+        showContent();
+      } else {
+        errorDiv.textContent = 'Incorrect password. Please try again.';
+        input.value = '';
+        input.focus();
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Unlock Gallery';
+      }
+    } catch (error) {
+      console.error('Error verifying password:', error);
+      errorDiv.textContent = 'An error occurred. Please try again.';
       submitBtn.disabled = false;
       submitBtn.textContent = 'Unlock Gallery';
     }
@@ -148,10 +160,19 @@
     const input = document.getElementById('gallery-password-input');
     const submitBtn = document.getElementById('gallery-password-submit');
     
-    submitBtn.addEventListener('click', () => handlePasswordSubmit(overlay));
+    // Handle button click
+    submitBtn.addEventListener('click', () => {
+      handlePasswordSubmit(overlay).catch(error => {
+        console.error('Unhandled error in password submission:', error);
+      });
+    });
+    
+    // Handle Enter key press
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
-        handlePasswordSubmit(overlay);
+        handlePasswordSubmit(overlay).catch(error => {
+          console.error('Unhandled error in password submission:', error);
+        });
       }
     });
     
