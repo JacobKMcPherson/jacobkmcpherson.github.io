@@ -9,10 +9,12 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: false
-css: styles.css
-include-after-body:
-  - text: |
-      <script src="password-protect.js"></script>
+css: style.css
+format:
+  html:
+    include-after-body:
+      text: |
+        <script src="password-protect.js"></script>
 ---
 
 <!-- YouTube playlist embed -->
