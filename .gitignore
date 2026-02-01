@@ -14,3 +14,4 @@ docs/*
 # Node.js dependencies for gallery tests
 gallery/node_modules/
 gallery/package-lock.json
+gallery/coverage/
