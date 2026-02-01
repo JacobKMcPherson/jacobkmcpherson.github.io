@@ -1,10 +1,5 @@
 # Gallery Password Protection Setup
 
-⚠️ **IMPORTANT SECURITY NOTE**: This is a client-side password protection mechanism. While the password itself is not visible in the source code (only a SHA-256 hash is included), determined users can still:
-- Inspect the JavaScript code and extract the password hash
-- Use browser developer tools to access the protected content
-- Disable JavaScript to potentially bypass the protection
-
 **This protection is suitable for basic privacy (keeping casual visitors out) but NOT for highly sensitive or confidential content.** For stronger security, consider server-side authentication or a private repository.
 
 ---
