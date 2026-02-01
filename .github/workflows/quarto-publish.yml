@@ -49,6 +49,13 @@ jobs:
             PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
             echo "Injecting password hash into gallery password protection script..."
             sed -i "s/const PASSWORD_HASH = '[^']*';/const PASSWORD_HASH = '$PASSWORD_HASH';/" gallery/password-protect.js
+            # Verify the injection succeeded
+            if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" gallery/password-protect.js; then
+              echo "Password hash injection successful."
+            else
+              echo "Error: Failed to inject password hash."
+              exit 1
+            fi
           else
             echo "Warning: GALLERY_PASSWORD secret not set. Using default password 'temp'."
           fi
