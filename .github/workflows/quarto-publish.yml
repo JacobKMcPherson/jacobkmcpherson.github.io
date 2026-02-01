@@ -41,10 +41,12 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Inject Password Hash
+        env:
+          GALLERY_PASSWORD: ${{ secrets.GALLERY_PASSWORD }}
         run: |
           # Generate SHA-256 hash of the password secret
-          if [ -n "${{ secrets.GALLERY_PASSWORD }}" ]; then
-            PASSWORD_HASH=$(echo -n "${{ secrets.GALLERY_PASSWORD }}" | sha256sum | awk '{print $1}')
+          if [ -n "$GALLERY_PASSWORD" ]; then
+            PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
             echo "Injecting password hash into gallery password protection script..."
             sed -i "s/INJECTED_PASSWORD_HASH/$PASSWORD_HASH/g" gallery/password-protect.js
           else

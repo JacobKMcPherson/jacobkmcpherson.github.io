@@ -79,9 +79,9 @@
   // Verify password
   async function verifyPassword(password) {
     if (PASSWORD_HASH === 'INJECTED_PASSWORD_HASH') {
-      // For development/testing when hash is not injected
-      console.warn('Password hash not injected. Password protection is not active.');
-      return true;
+      // Password hash not injected - deny access in production
+      console.error('Password hash not injected. Password protection is not properly configured.');
+      return false;
     }
     
     const hash = await sha256(password);
