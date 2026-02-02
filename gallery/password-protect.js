@@ -4,7 +4,7 @@
 (function() {
   'use strict';
   
-  // Password hash injected at build time from GALLERY_PASSWORD secret - DO NOT COMMIT ACTUAL HASH
+  // Password hash injected at build time from GALLERY_PW secret - DO NOT COMMIT ACTUAL HASH
   // This will be replaced by the workflow during build
   const PASSWORD_HASH = '%%GALLERY_PASSWORD_HASH%%';
   
@@ -23,7 +23,7 @@
   const passwordConfigured = isValidPasswordHash(PASSWORD_HASH);
   const passwordOptional = window.GALLERY_PASSWORD_OPTIONAL === true;
   if (!passwordConfigured && !passwordOptional) {
-    console.error('GALLERY_PASSWORD secret not configured. Password protection is not functional.');
+    console.error('GALLERY_PW secret not configured. Password protection is not functional.');
     // Prevent page from loading - fail secure
     const errorDiv = document.createElement('div');
     errorDiv.style.cssText = 'text-align: center; padding: 50px; font-family: Arial, sans-serif;';
@@ -34,7 +34,7 @@
     errorDiv.appendChild(heading);
     errorDiv.appendChild(paragraph);
     document.body.replaceChildren(errorDiv);
-    throw new Error('GALLERY_PASSWORD secret not configured');
+    throw new Error('GALLERY_PW secret not configured');
   }
   
   // Simple SHA-256 hash function
