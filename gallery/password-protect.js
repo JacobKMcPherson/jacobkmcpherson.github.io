@@ -7,7 +7,6 @@
   // Password hash injected at build time from GALLERY_PW secret - DO NOT COMMIT ACTUAL HASH
   // This will be replaced by the workflow during build
   const PASSWORD_HASH = '%%GALLERY_PASSWORD_HASH%%';
-  const PASSWORD_PLACEHOLDER = '%%GALLERY_PASSWORD_' + 'HASH%%';
   
   // Session storage key
   const AUTH_KEY = 'gallery_authenticated';
@@ -17,7 +16,6 @@
   const HASH_PATTERN = /^[0-9a-fA-F]{64}$/;
   function isValidPasswordHash(hash) {
     return typeof hash === 'string' &&
-      hash !== PASSWORD_PLACEHOLDER &&
       HASH_PATTERN.test(hash);
   }
 
