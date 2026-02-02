@@ -21,8 +21,9 @@ Two GitHub Actions workflows have been implemented:
   1. Checkout repository
   2. Setup Quarto (latest release)
   3. Configure GitHub Pages
-  4. Render Quarto project to HTML
-  5. Upload Pages artifact from `docs/` directory
+  4. Inject password hash for gallery protection (from GALLERY_PASSWORD secret)
+  5. Render Quarto project to HTML
+  6. Upload Pages artifact from `docs/` directory
 
 #### Deploy Job
 - **Environment:** `github-pages`
@@ -91,6 +92,32 @@ Enhanced to exclude Quarto-specific files:
 5. **Rollback Capability:** Can revert to any previous commit
 6. **Concurrent Safety:** Only one deployment at a time
 
+## Gallery Password Protection
+
+The gallery page is protected with password authentication. The protection works as follows:
+
+1. **Build-Time Injection:** The GALLERY_PASSWORD secret is hashed (SHA-256) and injected into the password protection script during the build process
+2. **Client-Side Validation:** The password is verified in the browser against the injected hash
+3. **Session Storage:** Authentication persists within a browser session
+4. **Fail-Secure:** If the GALLERY_PASSWORD secret is not configured, the build will fail with a clear error message
+
+**Security Features:**
+- No plaintext passwords in source code
+- Password hash is generated at build time from repository secret
+- Fail-secure design prevents access if misconfigured
+- Safe DOM manipulation to prevent XSS vulnerabilities
+- Session-based authentication
+
+**Configuration:**
+To set the gallery password, add a `GALLERY_PASSWORD` repository secret:
+1. Go to repository Settings → Secrets and variables → Actions
+2. Click "New repository secret"
+3. Name: `GALLERY_PASSWORD`
+4. Value: Your desired password (will be hashed automatically)
+5. Click "Add secret"
+
+The workflow will automatically use this secret on the next build.
+
 ## Troubleshooting
 
 - **Build failures:** Check the Actions tab for detailed logs
@@ -103,3 +130,6 @@ For this to work, the repository needs:
 1. **GitHub Pages enabled** with source set to "GitHub Actions"
 2. **Actions permissions** enabled
 3. **Branch protection** (optional but recommended) for main/master branch
+4. **GALLERY_PASSWORD secret** set in repository settings (Settings → Secrets and variables → Actions → New repository secret)
+   - This secret is required for the gallery password protection feature
+   - The workflow will fail if this secret is not configured
