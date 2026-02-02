@@ -100,7 +100,7 @@ The gallery page is protected with password authentication. The protection works
 2. **Complete Placeholder Replacement:** All placeholder occurrences in the script are replaced using sed's global flag to ensure proper functionality
 3. **Client-Side Validation:** The password is verified in the browser against the injected hash
 4. **Session Storage:** Authentication persists within a browser session
-5. **Fail-Secure:** If the GALLERY_PW secret is not configured, the page shows a configuration error unless explicitly marked optional
+5. **Fail-Secure:** If the GALLERY_PW secret is not configured, the page shows a configuration error
 
 **Security Features:**
 - No plaintext passwords in source code
@@ -117,7 +117,7 @@ The password protection script (`gallery/password-protect.js`) contains placehol
   1. Confirms the password hash constant is correctly set
   2. Verifies no placeholders remain in the file
 - If either check fails, the build stops with an error
-- Pages can opt into optional protection by setting `window.GALLERY_PASSWORD_OPTIONAL = true` before loading the script
+- The gallery password protection is always enforced when the script is loaded
 
 **Configuration:**
 To set the gallery password, add a `GALLERY_PW` repository secret:

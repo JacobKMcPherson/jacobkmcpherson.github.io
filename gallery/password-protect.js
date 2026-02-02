@@ -14,16 +14,16 @@
   // Check if password was properly injected
   // Validate SHA-256 hash (64 hex characters, case-insensitive)
   const HASH_PATTERN = /^[0-9a-fA-F]{64}$/;
+  const PASSWORD_PLACEHOLDER = '%%GALLERY_PASSWORD_HASH%%';
   function isValidPasswordHash(hash) {
     return typeof hash === 'string' &&
-      hash !== '%%GALLERY_PASSWORD_HASH%%' &&
+      hash !== PASSWORD_PLACEHOLDER &&
       HASH_PATTERN.test(hash);
   }
 
   const passwordConfigured = isValidPasswordHash(PASSWORD_HASH);
-  const passwordOptional = window.GALLERY_PASSWORD_OPTIONAL === true;
-  if (!passwordConfigured && !passwordOptional) {
-    console.error('GALLERY_PW secret not configured. Password protection is not functional.');
+  if (!passwordConfigured) {
+    console.error('Gallery password protection is not properly configured.');
     // Prevent page from loading - fail secure
     const errorDiv = document.createElement('div');
     errorDiv.style.cssText = 'text-align: center; padding: 50px; font-family: Arial, sans-serif;';
@@ -170,13 +170,6 @@
   
   // Initialize password protection
   function init() {
-    if (!passwordConfigured && passwordOptional) {
-      console.warn('Gallery password protection is disabled by optional configuration.');
-      // Password not configured in optional mode; skip authentication.
-      showContent();
-      return;
-    }
-
     if (isAuthenticated()) {
       showContent();
       return;
