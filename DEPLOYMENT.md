@@ -97,9 +97,10 @@ Enhanced to exclude Quarto-specific files:
 The gallery page is protected with password authentication. The protection works as follows:
 
 1. **Build-Time Injection:** The GALLERY_PASSWORD secret is hashed (SHA-256) and injected into the password protection script during the build process
-2. **Client-Side Validation:** The password is verified in the browser against the injected hash
-3. **Session Storage:** Authentication persists within a browser session
-4. **Fail-Secure:** If the GALLERY_PASSWORD secret is not configured, the build will fail with a clear error message
+2. **Complete Placeholder Replacement:** All placeholder occurrences in the script are replaced using sed's global flag to ensure proper functionality
+3. **Client-Side Validation:** The password is verified in the browser against the injected hash
+4. **Session Storage:** Authentication persists within a browser session
+5. **Fail-Secure:** If the GALLERY_PASSWORD secret is not configured, the build will fail with a clear error message
 
 **Security Features:**
 - No plaintext passwords in source code
@@ -107,6 +108,15 @@ The gallery page is protected with password authentication. The protection works
 - Fail-secure design prevents access if misconfigured
 - Safe DOM manipulation to prevent XSS vulnerabilities
 - Session-based authentication
+- Comprehensive verification ensures all placeholders are replaced
+
+**Implementation Details:**
+The password protection script (`gallery/password-protect.js`) contains placeholder strings `%%GALLERY_PASSWORD_HASH%%` that are replaced during the build:
+- The workflow uses `sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|g"` with the global flag (`g`) to replace ALL occurrences
+- Two verification checks ensure proper injection:
+  1. Confirms the password hash constant is correctly set
+  2. Verifies no placeholders remain in the file
+- If either check fails, the build stops with an error
 
 **Configuration:**
 To set the gallery password, add a `GALLERY_PASSWORD` repository secret:
