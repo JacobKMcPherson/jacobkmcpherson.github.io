@@ -14,8 +14,10 @@
   // Check if password was properly injected
   // Validate SHA-256 hash (64 hex characters, case-insensitive)
   const HASH_PATTERN = /^[0-9a-fA-F]{64}$/;
+  const PASSWORD_PLACEHOLDER = '%%GALLERY_PASSWORD_HASH%%';
   function isValidPasswordHash(hash) {
     return typeof hash === 'string' &&
+      hash !== PASSWORD_PLACEHOLDER &&
       HASH_PATTERN.test(hash);
   }
 
