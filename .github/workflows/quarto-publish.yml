@@ -40,6 +40,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
       - name: Inject Password Hash
         env:
           GALLERY_PASSWORD: ${{ secrets.GALLERY_PASSWORD }}
@@ -54,20 +59,15 @@ jobs:
           PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
           echo "Injecting password hash into gallery password protection script..."
           # Using pipe delimiter is safe for SHA-256 hex strings (only contains 0-9, a-f)
-          sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|" gallery/password-protect.js
+          sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|" docs/gallery/password-protect.js
           
           # Verify the injection succeeded
-          if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" gallery/password-protect.js; then
+          if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" docs/gallery/password-protect.js; then
             echo "Password hash injection successful."
           else
             echo "Error: Failed to inject password hash."
             exit 1
           fi
-
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
