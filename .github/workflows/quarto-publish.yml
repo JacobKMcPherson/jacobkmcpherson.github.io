@@ -58,12 +58,21 @@ jobs:
           
           PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
           echo "Injecting password hash into gallery password protection script..."
-          # Using pipe delimiter is safe for SHA-256 hex strings (only contains 0-9, a-f)
-          sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|" docs/gallery/password-protect.js
           
-          # Verify the injection succeeded
+          # Using pipe delimiter with 'g' flag to replace ALL occurrences
+          # SHA-256 hex strings only contain 0-9, a-f, so pipe delimiter is safe
+          sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|g" docs/gallery/password-protect.js
+          
+          # Verify the injection succeeded by checking:
+          # 1. The password hash constant is set correctly
+          # 2. No placeholder remains in the file
           if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" docs/gallery/password-protect.js; then
-            echo "Password hash injection successful."
+            if ! grep -q "%%GALLERY_PASSWORD_HASH%%" docs/gallery/password-protect.js; then
+              echo "Password hash injection successful - all placeholders replaced."
+            else
+              echo "Error: Some placeholders were not replaced."
+              exit 1
+            fi
           else
             echo "Error: Failed to inject password hash."
             exit 1
