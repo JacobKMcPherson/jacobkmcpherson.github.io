@@ -14,6 +14,9 @@
   // Check if password was properly injected
   if (PASSWORD_HASH === '%%GALLERY_PASSWORD_HASH%%') {
     console.error('GALLERY_PASSWORD secret not configured. Password protection is not functional.');
+    // Prevent page from loading - fail secure
+    document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;"><h1>Configuration Error</h1><p>Gallery password protection is not properly configured.</p></div>';
+    throw new Error('GALLERY_PASSWORD secret not configured');
   }
   
   // Simple SHA-256 hash function

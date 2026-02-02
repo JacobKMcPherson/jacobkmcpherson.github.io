@@ -56,7 +56,7 @@ jobs:
           sed -i "s/%%GALLERY_PASSWORD_HASH%%/$PASSWORD_HASH/" gallery/password-protect.js
           
           # Verify the injection succeeded
-          if grep -q "$PASSWORD_HASH" gallery/password-protect.js; then
+          if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" gallery/password-protect.js; then
             echo "Password hash injection successful."
           else
             echo "Error: Failed to inject password hash."
