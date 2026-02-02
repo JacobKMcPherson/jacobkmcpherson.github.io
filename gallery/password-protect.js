@@ -23,8 +23,7 @@
     paragraph.textContent = 'Gallery password protection is not properly configured.';
     errorDiv.appendChild(heading);
     errorDiv.appendChild(paragraph);
-    document.body.innerHTML = '';
-    document.body.appendChild(errorDiv);
+    document.body.replaceChildren(errorDiv);
     throw new Error('GALLERY_PASSWORD secret not configured');
   }
   
