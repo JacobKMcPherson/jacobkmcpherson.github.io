@@ -53,7 +53,7 @@ jobs:
           
           PASSWORD_HASH=$(echo -n "$GALLERY_PASSWORD" | sha256sum | awk '{print $1}')
           echo "Injecting password hash into gallery password protection script..."
-          sed -i "s/%%GALLERY_PASSWORD_HASH%%/$PASSWORD_HASH/" gallery/password-protect.js
+          sed -i "s|%%GALLERY_PASSWORD_HASH%%|$PASSWORD_HASH|" gallery/password-protect.js
           
           # Verify the injection succeeded
           if grep -q "const PASSWORD_HASH = '$PASSWORD_HASH';" gallery/password-protect.js; then

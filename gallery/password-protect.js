@@ -15,7 +15,16 @@
   if (PASSWORD_HASH === '%%GALLERY_PASSWORD_HASH%%') {
     console.error('GALLERY_PASSWORD secret not configured. Password protection is not functional.');
     // Prevent page from loading - fail secure
-    document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;"><h1>Configuration Error</h1><p>Gallery password protection is not properly configured.</p></div>';
+    const errorDiv = document.createElement('div');
+    errorDiv.style.cssText = 'text-align: center; padding: 50px; font-family: Arial, sans-serif;';
+    const heading = document.createElement('h1');
+    heading.textContent = 'Configuration Error';
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'Gallery password protection is not properly configured.';
+    errorDiv.appendChild(heading);
+    errorDiv.appendChild(paragraph);
+    document.body.innerHTML = '';
+    document.body.appendChild(errorDiv);
     throw new Error('GALLERY_PASSWORD secret not configured');
   }
   
