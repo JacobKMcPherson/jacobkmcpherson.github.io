@@ -12,10 +12,25 @@
   const AUTH_KEY = 'gallery_authenticated';
   
   // Check if password was properly injected
+  const SHA256_HEX_LENGTH = 64;
   const HASH_PATTERN = /^[0-9a-f]{64}$/i;
   const passwordConfigured = HASH_PATTERN.test(PASSWORD_HASH);
-  if (!passwordConfigured) {
-    console.warn('GALLERY_PASSWORD secret not configured. Password protection is disabled.');
+  const passwordOptional = window.GALLERY_PASSWORD_OPTIONAL === true;
+  if (!passwordConfigured && !passwordOptional) {
+    console.error('GALLERY_PASSWORD secret not configured. Password protection is not functional.');
+    // Prevent page from loading - fail secure
+    const errorDiv = document.createElement('div');
+    errorDiv.style.cssText = 'text-align: center; padding: 50px; font-family: Arial, sans-serif;';
+    const heading = document.createElement('h1');
+    heading.textContent = 'Configuration Error';
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'Gallery password protection is not properly configured.';
+    errorDiv.appendChild(heading);
+    errorDiv.appendChild(paragraph);
+    document.body.replaceChildren(errorDiv);
+    throw new Error('GALLERY_PASSWORD secret not configured');
+  } else if (!passwordConfigured && passwordOptional) {
+    console.warn('GALLERY_PASSWORD secret not configured. Password protection is disabled by configuration.');
   }
   
   // Simple SHA-256 hash function
