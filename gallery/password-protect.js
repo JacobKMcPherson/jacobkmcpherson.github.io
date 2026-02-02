@@ -4,17 +4,27 @@
 (function() {
   'use strict';
   
-  // Password hash injected at build time - DO NOT COMMIT ACTUAL HASH
-  // Default hash is SHA-256 of 'temp' - will be replaced by workflow if GALLERY_PASSWORD secret is set
-  const PASSWORD_HASH = 'a6864eb339b0e1f6e00d75293a8840abf069a2c0fe82e6e53af6ac099793c1d5';
-  const DEFAULT_HASH = 'a6864eb339b0e1f6e00d75293a8840abf069a2c0fe82e6e53af6ac099793c1d5';
+  // Password hash injected at build time from GALLERY_PASSWORD secret - DO NOT COMMIT ACTUAL HASH
+  // This will be replaced by the workflow during build
+  const PASSWORD_HASH = '%%GALLERY_PASSWORD_HASH%%';
   
   // Session storage key
   const AUTH_KEY = 'gallery_authenticated';
   
-  // Warn if using default password
-  if (PASSWORD_HASH === DEFAULT_HASH) {
-    console.warn('Gallery is using default password. Please set GALLERY_PASSWORD secret for production use.');
+  // Check if password was properly injected
+  if (PASSWORD_HASH === '%%GALLERY_PASSWORD_HASH%%') {
+    console.error('GALLERY_PASSWORD secret not configured. Password protection is not functional.');
+    // Prevent page from loading - fail secure
+    const errorDiv = document.createElement('div');
+    errorDiv.style.cssText = 'text-align: center; padding: 50px; font-family: Arial, sans-serif;';
+    const heading = document.createElement('h1');
+    heading.textContent = 'Configuration Error';
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'Gallery password protection is not properly configured.';
+    errorDiv.appendChild(heading);
+    errorDiv.appendChild(paragraph);
+    document.body.replaceChildren(errorDiv);
+    throw new Error('GALLERY_PASSWORD secret not configured');
   }
   
   // Simple SHA-256 hash function
