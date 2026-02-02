@@ -16,9 +16,6 @@ format:
   html:
     include-after-body:
       text: |
-        <script>
-          window.GALLERY_PASSWORD_OPTIONAL = true;
-        </script>
         <script src="password-protect.js"></script>
 ---
 
