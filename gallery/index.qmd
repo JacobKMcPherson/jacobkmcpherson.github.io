@@ -13,14 +13,10 @@ format:
         <script src="password-protect.js"></script>
 ---
 
-<div class="image-gallery">
-
-</div>
-
 <!-- YouTube playlist embed -->
 
 <iframe
-  width="100%"
+  width="85%"
   height="380"
   src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iQWI4QSt7FtomJhGDpnUlgN"
   title="YouTube playlist"
@@ -30,3 +26,7 @@ format:
   loading="lazy">
 </iframe>
 
+
+<div class="image-gallery">
+
+</div>
