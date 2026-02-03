@@ -65,13 +65,14 @@ Two GitHub Actions workflows have been implemented:
 - **Format:** HTML with Cosmo theme
 
 ### Git Ignore (`.gitignore`)
-Enhanced to exclude Quarto-specific files:
+Enhanced to exclude Quarto-specific files and private repository images:
 - `/.quarto/` - Quarto cache directory
 - `*_cache/` - Rendering cache directories
 - `.quarto` - Additional Quarto files
 - `_site/` - Alternative output directory
 - `*.tmp` - Temporary files
 - `.DS_Store`, `Thumbs.db` - OS-specific files
+- `gallery/images/*.png` and other image formats - Private repository images (excluded from source control for security)
 
 ## Deployment Process
 
@@ -129,6 +130,8 @@ To set up the private repository integration:
 - The private key is never exposed in logs or artifacts
 - The cloned repository is only used during the build and not deployed
 - Only PNG images from the `images/` directory are copied to the gallery
+- **Images are excluded from source control:** The `.gitignore` file is configured to exclude all image files in `gallery/images/` (only `.gitkeep` is tracked), ensuring private repository images are never committed to the public source repository
+- Images only exist in the built output (`docs/` directory) which is generated during the workflow and deployed to GitHub Pages
 
 ## Gallery Password Protection
 
