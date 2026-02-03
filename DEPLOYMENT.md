@@ -129,8 +129,8 @@ To set up the private repository integration:
 - The deploy key has read-only access to the private repository
 - The private key is never exposed in logs or artifacts
 - The cloned repository is only used during the build and not deployed
-- Only PNG images from the `images/` directory are copied to the gallery
-- **Images are excluded from source control:** The `.gitignore` file is configured to exclude all image files in `gallery/images/` (only `.gitkeep` is tracked), ensuring private repository images are never committed to the public source repository
+- Currently only PNG images from the `images/` directory are copied to the gallery (the workflow can be extended to copy other formats if needed)
+- **Images are excluded from source control:** The `.gitignore` file is configured to exclude all common image formats in `gallery/images/` (only `.gitkeep` is tracked), ensuring private repository images are never committed to the public source repository
 - Images only exist in the built output (`docs/` directory) which is generated during the workflow and deployed to GitHub Pages
 
 ## Gallery Password Protection
