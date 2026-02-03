@@ -47,6 +47,11 @@ jobs:
           mkdir -p gallery/images
           cp -r gallery_001/images/* gallery/images/
 
+      - name: Generate gallery HTML
+        run: |
+          chmod +x .github/scripts/generate-gallery.sh
+          .github/scripts/generate-gallery.sh
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
