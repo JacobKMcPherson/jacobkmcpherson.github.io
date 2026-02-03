@@ -8,6 +8,9 @@ GALLERY_DIR="gallery"
 IMAGES_DIR="${GALLERY_DIR}/images"
 GALLERY_QMD="${GALLERY_DIR}/index.qmd"
 
+# Supported image file extensions
+IMAGE_EXTENSIONS=("jpg" "jpeg" "png" "gif" "webp" "svg")
+
 echo "Generating gallery image HTML..."
 
 # Check if images directory exists and has images
@@ -16,8 +19,19 @@ if [ ! -d "$IMAGES_DIR" ]; then
   exit 1
 fi
 
-# Count image files
-IMAGE_COUNT=$(find "$IMAGES_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.webp" -o -iname "*.svg" \) ! -name ".gitkeep" | wc -l)
+# Build find command with all supported extensions
+FIND_ARGS=()
+for ext in "${IMAGE_EXTENSIONS[@]}"; do
+  if [ ${#FIND_ARGS[@]} -gt 0 ]; then
+    FIND_ARGS+=("-o")
+  fi
+  FIND_ARGS+=("-iname" "*.${ext}")
+done
+
+# Find all image files (case-insensitive)
+mapfile -t IMAGE_FILES < <(find "$IMAGES_DIR" -type f \( "${FIND_ARGS[@]}" \) ! -name ".gitkeep" | sort)
+
+IMAGE_COUNT=${#IMAGE_FILES[@]}
 
 if [ "$IMAGE_COUNT" -eq 0 ]; then
   echo "Warning: No images found in $IMAGES_DIR"
@@ -30,18 +44,15 @@ echo "Found $IMAGE_COUNT images"
 
 # Generate HTML for images
 GALLERY_HTML=""
-for img_path in "$IMAGES_DIR"/*.{jpg,jpeg,png,gif,webp,svg} "$IMAGES_DIR"/*.{JPG,JPEG,PNG,GIF,WEBP,SVG}; do
-  # Skip if glob doesn't match any files (bash will leave the pattern as-is)
-  [ -e "$img_path" ] || continue
-  
+for img_path in "${IMAGE_FILES[@]}"; do
   # Get just the filename
   img_file=$(basename "$img_path")
   
-  # Skip .gitkeep
-  [ "$img_file" = ".gitkeep" ] && continue
+  # Create descriptive alt text from filename (remove extension and replace hyphens/underscores with spaces)
+  alt_text=$(basename "$img_file" | sed 's/\.[^.]*$//' | sed 's/[-_]/ /g')
   
-  # Add image tag with relative path
-  GALLERY_HTML="${GALLERY_HTML}  <img src=\"images/${img_file}\" alt=\"Gallery image\" loading=\"lazy\">\n"
+  # Add image tag with relative path and descriptive alt text
+  GALLERY_HTML="${GALLERY_HTML}  <img src=\"images/${img_file}\" alt=\"${alt_text}\" loading=\"lazy\">\n"
 done
 
 # Check if we have any HTML to insert
