@@ -12,8 +12,9 @@ format:
         <script src="password-protect.js"></script>
 ---
 
-<!-- YouTube playlist embed -->
+![](images/AlphaFold.png)
 
+<!-- YouTube playlist embed -->
 
 <iframe
   width="100%"
