@@ -31,6 +31,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PRIVATE_REPO_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Clone private assets
+        run: |
+          git clone git@github.com:jacobkmcpherson/gallery_001.git gallery_001
+
+      - name: Copy images
+        run: |
+          mkdir -p images
+          cp -r assets/images/* images/
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
