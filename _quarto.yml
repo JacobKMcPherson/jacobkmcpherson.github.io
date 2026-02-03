@@ -65,12 +65,12 @@ website:
       - icon: threads
         href: https://www.threads.com/@jkmcpherson_25
         aria-label: Threads
-      - icon: youtube
-        href: https://youtube.com/@jacobkmcpherson
-        aria-label: YouTube
       - icon: camera
         href: https://www.flickr.com/photos/jacobkmcpherson/
         aria-label: Flickr
+      - icon: youtube
+        href: https://youtube.com/@jacobkmcpherson
+        aria-label: YouTube
       - icon: spotify
         href: https://open.spotify.com/user/1241595878
         aria-label: Spotify
