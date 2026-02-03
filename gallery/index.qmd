@@ -13,26 +13,9 @@ format:
         <script src="password-protect.js"></script>
 ---
 
-```{r}
-#| echo: false
-#| results: asis
+<div class="image-gallery">
 
-# Get all files in gallery/images relative to this document
-files <- list.files("images", full.names = TRUE)
-
-# Filter to common image types (adjust as needed)
-image_ext <- c(".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")
-imgs <- files[tolower(tools::file_ext(files)) %in% sub("^\\.", "", image_ext)]
-
-# Emit HTML for a simple responsive gallery
-cat("<div class='image-gallery'>\n")
-for (img in imgs) {
-  # Make path relative to this qmd for the browser
-  rel <- gsub("^images/", "images/", img)
-  cat(sprintf("  <figure class='gallery-item'>\n    <img src='%s' loading='lazy'/></figure>\n", rel))
-}
-cat("</div>\n")
-```
+</div>
 
 <!-- YouTube playlist embed -->
 
@@ -47,17 +30,3 @@ cat("</div>\n")
   loading="lazy">
 </iframe>
 
-<style>
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 4px;
-}
-</style>
