@@ -36,7 +36,7 @@ website:
         href: https://calendar.app.google/U3ZhDHVpvkYRY2aj7
         aria-label: Calendar
       - icon: envelope
-        href: mailto:jacobmcpherson@utexas.edu;jkmcpherson@uh.edu;jacob@jacobkmcpherson.com
+        href: mailto:jacobmcpherson@utexas.edu;jkmcpherson@uh.edu;jacob@jacobkmcpherson.com;jacobkmcpherson@outlook.com
         aria-label: Email
       - icon: people
         href: https://mcphersonlab.github.io/
@@ -68,6 +68,9 @@ website:
       - icon: youtube
         href: https://youtube.com/@jacobkmcpherson
         aria-label: YouTube
+      - icon: camera
+        href: https://www.flickr.com/photos/jacobkmcpherson/
+        aria-label: Flickr
       - icon: spotify
         href: https://open.spotify.com/user/1241595878
         aria-label: Spotify
