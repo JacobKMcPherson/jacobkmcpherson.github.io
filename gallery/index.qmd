@@ -5,6 +5,7 @@ title-block-banner: false
 css: style.css
 resources:
   - password-protect.js
+  - images
 format:
   html:
     include-after-body:

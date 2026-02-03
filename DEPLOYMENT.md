@@ -19,11 +19,14 @@ Two GitHub Actions workflows have been implemented:
 - **OS:** Ubuntu Latest
 - **Steps:**
   1. Checkout repository
-  2. Setup Quarto (latest release)
-  3. Configure GitHub Pages
-4. Inject password hash for gallery protection (from GALLERY_PW secret)
-  5. Render Quarto project to HTML
-  6. Upload Pages artifact from `docs/` directory
+  2. Setup SSH for private repository access (using PRIVATE_REPO_DEPLOY_KEY secret)
+  3. Clone private assets repository (`gallery_001`)
+  4. Copy PNG images from private repository to `gallery/images/`
+  5. Setup Quarto (latest release)
+  6. Configure GitHub Pages
+  7. Render Quarto project to HTML
+  8. Inject password hash for gallery protection (from GALLERY_PW secret)
+  9. Upload Pages artifact from `docs/` directory
 
 #### Deploy Job
 - **Environment:** `github-pages`
@@ -62,21 +65,26 @@ Two GitHub Actions workflows have been implemented:
 - **Format:** HTML with Cosmo theme
 
 ### Git Ignore (`.gitignore`)
-Enhanced to exclude Quarto-specific files:
+Enhanced to exclude Quarto-specific files and private repository images:
 - `/.quarto/` - Quarto cache directory
 - `*_cache/` - Rendering cache directories
 - `.quarto` - Additional Quarto files
 - `_site/` - Alternative output directory
 - `*.tmp` - Temporary files
 - `.DS_Store`, `Thumbs.db` - OS-specific files
+- `gallery/images/*.png` and other image formats - Private repository images (excluded from source control for security)
 
 ## Deployment Process
 
 1. **Developer pushes changes** to main/master branch
 2. **Build job triggers** and:
    - Sets up fresh Ubuntu environment
+   - Configures SSH access using the PRIVATE_REPO_DEPLOY_KEY secret
+   - Clones the private `gallery_001` repository containing gallery assets
+   - Copies PNG images from the private repository to `gallery/images/`
    - Installs Quarto
    - Renders all `.qmd` files to HTML in `docs/`
+   - Injects the gallery password hash into the password protection script
    - Uploads the `docs/` directory as Pages artifact
 3. **Deploy job triggers** (only on main/master) and:
    - Downloads the artifact
@@ -91,6 +99,39 @@ Enhanced to exclude Quarto-specific files:
 4. **Consistent Environment:** Same Quarto version used for all builds
 5. **Rollback Capability:** Can revert to any previous commit
 6. **Concurrent Safety:** Only one deployment at a time
+7. **Private Asset Integration:** Securely pulls images from private repository
+
+## Private Repository Integration
+
+The workflow securely accesses a private repository (`gallery_001`) to pull gallery images during the build process.
+
+**How it Works:**
+1. **SSH Deploy Key:** A deploy key with read-only access is configured in the private repository
+2. **Secret Storage:** The private key is stored as a repository secret (`PRIVATE_REPO_DEPLOY_KEY`)
+3. **Build-Time Access:** During the build, the workflow:
+   - Sets up SSH with the deploy key
+   - Clones the private repository
+   - Copies PNG images from `gallery_001/images/*.png` to `gallery/images/`
+   - Removes the private repository clone (not included in deployment)
+
+**Configuration:**
+To set up the private repository integration:
+1. Generate an SSH key pair: `ssh-keygen -t ed25519 -C "github-actions-deploy-key"`
+2. Add the public key as a deploy key in the private repository (Settings → Deploy keys)
+3. Add the private key as a repository secret in this repository:
+   - Go to Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `PRIVATE_REPO_DEPLOY_KEY`
+   - Value: The entire private key (including `-----BEGIN OPENSSH PRIVATE KEY-----` and `-----END OPENSSH PRIVATE KEY-----`)
+4. The workflow will automatically use this key on the next build
+
+**Security Notes:**
+- The deploy key has read-only access to the private repository
+- The private key is never exposed in logs or artifacts
+- The cloned repository is only used during the build and not deployed
+- Currently only PNG images from the `images/` directory are copied to the gallery (the workflow can be extended to copy other formats if needed)
+- **Images are excluded from source control:** The `.gitignore` file is configured to exclude all common image formats in `gallery/images/` (only `.gitkeep` is tracked), ensuring private repository images are never committed to the public source repository
+- Images only exist in the built output (`docs/` directory) which is generated during the workflow and deployed to GitHub Pages
 
 ## Gallery Password Protection
 
@@ -141,6 +182,9 @@ For this to work, the repository needs:
 1. **GitHub Pages enabled** with source set to "GitHub Actions"
 2. **Actions permissions** enabled
 3. **Branch protection** (optional but recommended) for main/master branch
-4. **GALLERY_PW secret** set in repository settings (Settings → Secrets and variables → Actions → New repository secret)
+4. **PRIVATE_REPO_DEPLOY_KEY secret** set in repository settings for private repository access
+   - This secret contains the SSH private key for accessing the private `gallery_001` repository
+   - Required if the workflow needs to pull images from the private repository
+5. **GALLERY_PW secret** set in repository settings (Settings → Secrets and variables → Actions → New repository secret)
    - This secret is required for the gallery password protection feature
    - The workflow will fail if this secret is not configured

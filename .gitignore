@@ -15,3 +15,11 @@ docs/*
 gallery/node_modules/
 gallery/package-lock.json
 gallery/coverage/
+
+# Private repository images - should only be in build output, not source
+gallery/images/*.png
+gallery/images/*.jpg
+gallery/images/*.jpeg
+gallery/images/*.gif
+gallery/images/*.svg
+gallery/images/*.webp
