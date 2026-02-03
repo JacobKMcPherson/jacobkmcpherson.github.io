@@ -14,13 +14,13 @@ website:
     left: 
       - href: index.qmd
         text: ""
-      - href: about.qmd
+      - href: about/index.qmd
         text: ""
       - href: blog/index.qmd
         text: ""
       - href: research/index.qmd
         text: ""
-      - href: podcasts.qmd
+      - href: podcasts/index.qmd
         text: ""
       - href: gallery/index.qmd
         text: ""
