@@ -106,7 +106,8 @@
   // Verify password
   async function verifyPassword(password) {
     const hash = await sha256(password);
-    return hash === PASSWORD_HASH;
+    // Case-insensitive comparison with whitespace trimming for robustness
+    return hash.toLowerCase().trim() === PASSWORD_HASH.toLowerCase().trim();
   }
   
   // Handle password submission
