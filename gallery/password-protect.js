@@ -14,7 +14,10 @@
   // Check if password was properly injected
   // Validate SHA-256 hash (64 hex characters, case-insensitive)
   const HASH_PATTERN = /^[0-9a-fA-F]{64}$/;
-  const PASSWORD_PLACEHOLDER = '%%GALLERY_PASSWORD_HASH%%';
+  // IMPORTANT: Using string concatenation to construct '%%GALLERY_PASSWORD_HASH%%' at runtime
+  // to prevent sed from replacing this constant during the build process (only the PASSWORD_HASH
+  // assignment on line 9 should be replaced). Do not change to a simple string literal.
+  const PASSWORD_PLACEHOLDER = '%' + '%GALLERY_PASSWORD_HASH%' + '%';
   function isValidPasswordHash(hash) {
     return typeof hash === 'string' &&
       hash !== PASSWORD_PLACEHOLDER &&
@@ -106,7 +109,9 @@
   // Verify password
   async function verifyPassword(password) {
     const hash = await sha256(password);
-    return hash === PASSWORD_HASH;
+    // Normalize both sides for case-insensitive comparison with defensive whitespace trimming
+    // Both sha256() and the workflow generate lowercase, but this ensures robustness
+    return hash.toLowerCase().trim() === PASSWORD_HASH.toLowerCase().trim();
   }
   
   // Handle password submission
