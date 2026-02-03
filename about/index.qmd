@@ -2,7 +2,7 @@
 title: "About Me"
 about:
   template: jolla
-  image: profile.svg
+  image: ../profile.svg
   links:
     - icon: twitter
       text: Twitter
