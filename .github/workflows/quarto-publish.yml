@@ -45,7 +45,7 @@ jobs:
       - name: Copy images
         run: |
           mkdir -p gallery/images
-          cp gallery_001/images/*.png gallery/images/ || echo "No PNG images found to copy"
+          cp -r gallery_001/images/* gallery/images/
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
