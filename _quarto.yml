@@ -30,8 +30,14 @@ website:
         href: https://www.scopus.com/authid/detail.uri?authorId=57204192355
         aria-label: SCOPUS
       - icon: book
+        href: https://www.webofscience.com/wos/author/record/OZF-0932-2025
+        aria-label: WOS
+      - icon: mortarboard-fill
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
+      - icon: cloud-check-fill
+        href: https://figshare.com/authors/Jacob_McPherson/23126380
+        aria-label: FigShare
       - icon: calendar-date
         href: https://calendar.app.google/U3ZhDHVpvkYRY2aj7
         aria-label: Calendar
