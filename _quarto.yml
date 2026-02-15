@@ -32,10 +32,13 @@ website:
       - icon: book
         href: https://www.webofscience.com/wos/author/record/OZF-0932-2025
         aria-label: WOS
-      - icon: mortarboard-fill
+      - icon: flask
+        href: https://orcid.org/0000-0001-5486-4945
+        aria-label: ORCiD
+      - icon: mortarboard
         href: https://scholar.google.com/citations?user=MsZPCoIAAAAJ&hl=en
         aria-label: Google Scholar
-      - icon: cloud-check-fill
+      - icon: cloud-check
         href: https://figshare.com/authors/Jacob_McPherson/23126380
         aria-label: FigShare
       - icon: calendar-date
