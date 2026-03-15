@@ -13,18 +13,59 @@ format:
         <script src="password-protect.js"></script>
 ---
 
-<!-- YouTube playlist embed -->
+<!-- YouTube playlists grid -->
 
-<iframe
-  width="100%"
-  height="380"
-  src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iQWI4QSt7FtomJhGDpnUlgN"
-  title="YouTube playlist"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+<div class="playlist-grid">
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iSLT4XXGDxPV7XWtDW2ZXzj"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iSLT4XXGDxPV7XWtDW2ZXzj"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iSmCBX-H6YWbiifrJAFNpt-"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iSmCBX-H6YWbiifrJAFNpt-"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iTNRaWsRL8QTD5PSKlJy4mY"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iTNRaWsRL8QTD5PSKlJy4mY"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iTZBaTW1ojRFGKPkVQ1rR8J"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iTZBaTW1ojRFGKPkVQ1rR8J"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iT11SVvXNj5bY7vtlykCNhS"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iT11SVvXNj5bY7vtlykCNhS"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iS_qlBvdRiZL0yOWM5Bv0Zd"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iS_qlBvdRiZL0yOWM5Bv0Zd"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iRj2TDs3cm3FtAMMCZYtqp0"
+    title="Jacob K. McPherson YouTube Playlist PLPaY3vQLR3iRj2TDs3cm3FtAMMCZYtqp0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
 
 
 <div class="image-gallery">

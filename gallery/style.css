@@ -1,3 +1,44 @@
+/* YouTube playlists grid */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.playlist-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .playlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
 /* Gallery styling */
 .image-gallery {
   display: grid;
@@ -23,17 +64,3 @@
   cursor: pointer;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .image-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .image-gallery {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
