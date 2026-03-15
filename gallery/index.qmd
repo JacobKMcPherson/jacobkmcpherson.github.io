@@ -13,18 +13,66 @@ format:
         <script src="password-protect.js"></script>
 ---
 
-<!-- YouTube playlist embed -->
+<!-- YouTube playlists grid -->
 
-<iframe
-  width="100%"
-  height="380"
-  src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iQWI4QSt7FtomJhGDpnUlgN"
-  title="YouTube playlist"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+<div class="playlist-grid">
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iSLT4XXGDxPV7XWtDW2ZXzj"
+    title="YouTube playlist 1"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iSmCBX-H6YWbiifrJAFNpt-"
+    title="YouTube playlist 2"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iTNRaWsRL8QTD5PSKlJy4mY"
+    title="YouTube playlist 3"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iTZBaTW1ojRFGKPkVQ1rR8J"
+    title="YouTube playlist 4"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iT11SVvXNj5bY7vtlykCNhS"
+    title="YouTube playlist 5"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iS_qlBvdRiZL0yOWM5Bv0Zd"
+    title="YouTube playlist 6"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLPaY3vQLR3iRj2TDs3cm3FtAMMCZYtqp0"
+    title="YouTube playlist 7"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
 
 
 <div class="image-gallery">
