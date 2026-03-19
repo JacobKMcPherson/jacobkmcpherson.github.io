@@ -7,6 +7,10 @@
   margin-bottom: 40px;
 }
 
+.playlist-grid > p {
+  display: contents;
+}
+
 .playlist-grid iframe {
   min-width: 0;
   width: 100%;
