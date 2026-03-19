@@ -1,13 +1,14 @@
 /* YouTube playlists grid */
 .playlist-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   padding: 20px 0;
   margin-bottom: 40px;
 }
 
 .playlist-grid iframe {
+  min-width: 0;
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
@@ -63,4 +64,3 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
