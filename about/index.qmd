@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 about:
-  template: jolla
+  template: trestles
   image: ../profile.svg
   links:
     - icon: twitter
@@ -16,6 +16,8 @@ about:
 ---
 
 ### Interests
+
+🌎 travel
 
 👟 running
 
