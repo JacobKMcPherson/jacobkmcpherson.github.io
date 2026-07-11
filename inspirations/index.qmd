@@ -101,4 +101,14 @@ People who have inspired me through their dedication to wildlife, conservation, 
     </a>
   </div>
 
+  <div class="inspiration-card">
+    <a href="https://neildegrassetyson.com/" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg/480px-Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg" alt="Neil deGrasse Tyson">
+      <div class="card-body">
+        <p class="card-name">Neil deGrasse Tyson</p>
+        <p class="card-org">neildegrassetyson.com</p>
+      </div>
+    </a>
+  </div>
+
 </div>
