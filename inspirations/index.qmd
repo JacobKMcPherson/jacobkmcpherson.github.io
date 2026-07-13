@@ -2,78 +2,16 @@
 title: "Inspirations"
 page-layout: full
 title-block-banner: false
+css: style.css
 ---
-
-<style>
-.inspiration-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.inspiration-card {
-  text-align: center;
-  border: 1px solid #e3e3e3;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
-}
-
-.inspiration-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.inspiration-card a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.inspiration-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-.inspiration-card .card-body {
-  padding: 0.75rem;
-}
-
-.inspiration-card .card-name {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem 0;
-  color: #003366;
-}
-
-.inspiration-card .card-org {
-  font-size: 0.85rem;
-  color: #555;
-  margin: 0;
-}
-
-@media (max-width: 900px) {
-  .inspiration-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .inspiration-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
 
 People who have inspired me through their dedication to wildlife, conservation, and exploration.
 
 <div class="inspiration-grid">
 
   <div class="inspiration-card">
-    <a href="https://www.wildlifewarriors.org.au/" target="_blank" rel="noopener">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Steve_Irwin.jpg/480px-Steve_Irwin.jpg" alt="Steve Irwin">
+    <a href="https://www.wildlifewarriors.org.au/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Steve_Irwin.jpg/480px-Steve_Irwin.jpg" alt="Steve Irwin" loading="lazy" decoding="async">
       <div class="card-body">
         <p class="card-name">Steve Irwin</p>
         <p class="card-org">Wildlife Warriors</p>
@@ -82,8 +20,8 @@ People who have inspired me through their dedication to wildlife, conservation, 
   </div>
 
   <div class="inspiration-card">
-    <a href="https://www.janegoodall.org/" target="_blank" rel="noopener">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JaneGoodallHD.jpg/480px-JaneGoodallHD.jpg" alt="Jane Goodall">
+    <a href="https://www.janegoodall.org/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JaneGoodallHD.jpg/480px-JaneGoodallHD.jpg" alt="Jane Goodall" loading="lazy" decoding="async">
       <div class="card-body">
         <p class="card-name">Jane Goodall</p>
         <p class="card-org">Jane Goodall Institute</p>
@@ -92,8 +30,8 @@ People who have inspired me through their dedication to wildlife, conservation, 
   </div>
 
   <div class="inspiration-card">
-    <a href="https://www.cousteau.org/" target="_blank" rel="noopener">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jacques-Yves_Cousteau.jpg/480px-Jacques-Yves_Cousteau.jpg" alt="Jacques Cousteau">
+    <a href="https://www.cousteau.org/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jacques-Yves_Cousteau.jpg/480px-Jacques-Yves_Cousteau.jpg" alt="Jacques Cousteau" loading="lazy" decoding="async">
       <div class="card-body">
         <p class="card-name">Jacques Cousteau</p>
         <p class="card-org">The Cousteau Society</p>
@@ -102,8 +40,8 @@ People who have inspired me through their dedication to wildlife, conservation, 
   </div>
 
   <div class="inspiration-card">
-    <a href="https://neildegrassetyson.com/" target="_blank" rel="noopener">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg/480px-Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg" alt="Neil deGrasse Tyson">
+    <a href="https://neildegrassetyson.com/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg/480px-Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg" alt="Neil deGrasse Tyson" loading="lazy" decoding="async">
       <div class="card-body">
         <p class="card-name">Neil deGrasse Tyson</p>
         <p class="card-org">neildegrassetyson.com</p>
