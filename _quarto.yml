@@ -24,6 +24,8 @@ website:
         text: ""
       - href: gallery/index.qmd
         text: ""
+      - href: inspirations/index.qmd
+        text: ""
 
     right:
       - icon: vector-pen

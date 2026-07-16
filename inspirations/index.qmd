@@ -1,0 +1,52 @@
+---
+title: "Inspirations"
+page-layout: full
+title-block-banner: false
+css: style.css
+---
+
+People who have inspired me through their dedication to wildlife, conservation, and exploration.
+
+<div class="inspiration-grid">
+
+  <div class="inspiration-card">
+    <a href="https://www.wildlifewarriors.org.au/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Steve_Irwin.jpg/480px-Steve_Irwin.jpg" alt="Steve Irwin" loading="lazy" decoding="async">
+      <div class="card-body">
+        <p class="card-name">Steve Irwin</p>
+        <p class="card-org">Wildlife Warriors</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="inspiration-card">
+    <a href="https://www.janegoodall.org/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JaneGoodallHD.jpg/480px-JaneGoodallHD.jpg" alt="Jane Goodall" loading="lazy" decoding="async">
+      <div class="card-body">
+        <p class="card-name">Jane Goodall</p>
+        <p class="card-org">Jane Goodall Institute</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="inspiration-card">
+    <a href="https://www.cousteau.org/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jacques-Yves_Cousteau.jpg/480px-Jacques-Yves_Cousteau.jpg" alt="Jacques Cousteau" loading="lazy" decoding="async">
+      <div class="card-body">
+        <p class="card-name">Jacques Cousteau</p>
+        <p class="card-org">The Cousteau Society</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="inspiration-card">
+    <a href="https://neildegrassetyson.com/" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg/480px-Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg" alt="Neil deGrasse Tyson" loading="lazy" decoding="async">
+      <div class="card-body">
+        <p class="card-name">Neil deGrasse Tyson</p>
+        <p class="card-org">neildegrassetyson.com</p>
+      </div>
+    </a>
+  </div>
+
+</div>
